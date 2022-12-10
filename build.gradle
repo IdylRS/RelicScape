@@ -1,0 +1,41 @@
+plugins {
+	id 'java'
+}
+
+repositories {
+	mavenLocal()
+	maven {
+		url = 'https://repo.runelite.net'
+	}
+	mavenCentral()
+}
+
+def runeLiteVersion = '1.9.5'
+
+dependencies {
+	implementation 'net.runelite.jogl:jogl-rl:2.4.0-rc-20220318'
+	compileOnly group: 'net.runelite', name:'client', version: runeLiteVersion
+
+	compileOnly 'org.projectlombok:lombok:1.18.20'
+	annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+	testImplementation 'junit:junit:4.12'
+	testImplementation group: 'net.runelite', name:'client', version: runeLiteVersion
+	testImplementation group: 'net.runelite', name:'jshell', version: runeLiteVersion
+
+	def joglVer = "2.4.0-rc-20220318";
+	implementation "net.runelite.jogl:jogl-rl:$joglVer"
+	implementation "net.runelite.gluegen:gluegen-rt:$joglVer"
+	["windows-amd64", "windows-i586", "linux-amd64", "macosx-universal"].each { platform ->
+		runtimeOnly "net.runelite.jogl:jogl-rl:$joglVer:natives-$platform"
+		runtimeOnly "net.runelite.gluegen:gluegen-rt:$joglVer:natives-$platform"
+	}
+}
+
+group = 'com.relicscape'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}

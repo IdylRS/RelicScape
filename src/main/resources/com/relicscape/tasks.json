@@ -1,0 +1,7553 @@
+[
+    {
+        "id": "32131",
+        "tier": 2,
+        "type": "ENTER",
+        "description": "Enter the Cooking Guild",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "3143",
+                "y": "3444",
+                "plane": "0"
+            },
+            {
+                "x": "3142",
+                "y": "3444",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "skill": "COOKING"
+    },
+    {
+        "id": "312314",
+        "tier": 2,
+        "type": "ENTER",
+        "description": "Enter the Champion's Guild",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "3191",
+                "y": "3362",
+                "plane": "0"
+            },
+            {
+                "x": "3190",
+                "y": "3362",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "skill": "ATTACK"
+    },
+    {
+        "id": "756767",
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip a Mithril scimitar",
+        "region": "DESERT",
+        "completionIDs": [
+            1329
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 85497,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill the Lesser demon in the Wizard's Tower",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            2005
+        ],
+        "locations": [
+            {
+                "x": "3109",
+                "y": "3159",
+                "plane": "2"
+            }
+        ],
+        "gainedXP": -1,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 7329,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Defeat Obor",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            7416
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 89583,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Defeat Bryophyta",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            8195
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 42177,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Hill giant club",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            20756
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 73274,
+        "tier": 2,
+        "type": "LOOT",
+        "description": "Obtain a Giant key",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            20754
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 43927,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain Bryophyta's essence",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            22372
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 60187,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Complete a lap of the Draynor rooftop course",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "3102",
+                "y": "3257",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 79,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 62420,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Complete a lap of the Varrock rooftop course",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "3238",
+                "y": "3417",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 125,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 51496,
+        "tier": 1,
+        "type": "ENTER",
+        "description": "Enter the fourth level of the Stronghold of Security",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "2358",
+                "y": "5215",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "skill": "HITPOINTS"
+    },
+    {
+        "id": 83556,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Smith a Bronze platebody at the Lumbridge anvil",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            1117
+        ],
+        "locations": [
+            {
+                "x": "3227",
+                "y": "3249",
+                "plane": "0"
+            },
+            {
+                "x": "3228",
+                "y": "3250",
+                "plane": "0"
+            },
+            {
+                "x": "3226",
+                "y": "3250",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 62.5,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 70714,
+        "tier": 1,
+        "type": "ENTER",
+        "description": "Enter the HAM Hideout",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "3149",
+                "y": "9652",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 90376,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Bake bread on the range in the Lumbridge castle",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            2309
+        ],
+        "locations": [
+            {
+                "x": "3211",
+                "y": "3215",
+                "plane": "0"
+            },
+            {
+                "x": "3211",
+                "y": "3216",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 40,
+        "skill": "COOKING"
+    },
+    {
+        "id": 32013,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Plant a belladonna seed",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            5343
+        ],
+        "locations": [
+            {
+                "x": "3085",
+                "y": "3354",
+                "plane": "0"
+            },
+            {
+                "x": "3085",
+                "y": "3355",
+                "plane": "0"
+            },
+            {
+                "x": "3086",
+                "y": "3356",
+                "plane": "0"
+            },
+            {
+                "x": "3087",
+                "y": "3356",
+                "plane": "0"
+            },
+            {
+                "x": "3088",
+                "y": "3355",
+                "plane": "0"
+            },
+            {
+                "x": "3088",
+                "y": "3354",
+                "plane": "0"
+            },
+            {
+                "x": "3087",
+                "y": "3353",
+                "plane": "0"
+            },
+            {
+                "x": "3086",
+                "y": "3353",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 91,
+        "skill": "FARMING"
+    },
+    {
+        "id": 83260,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill Gunthor the Brave",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            299
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 30249,
+        "tier": 1,
+        "type": "ENTER",
+        "description": "Enter the house west of the Cooking Guild",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "3115",
+                "y": "3450",
+                "plane": "0"
+            },
+            {
+                "x": "3115",
+                "y": "3452",
+                "plane": "0"
+            },
+            {
+                "x": "3116",
+                "y": "3451",
+                "plane": "0"
+            },
+            {
+                "x": "3117",
+                "y": "3452",
+                "plane": "0"
+            },
+            {
+                "x": "3116",
+                "y": "3453",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "skill": "HITPOINTS"
+    },
+    {
+        "id": 79618,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Catch a Shrimp in Draynor",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            317
+        ],
+        "locations": [
+            {
+                "x": "3088",
+                "y": "3229",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 10,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 44166,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Sourhog",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            10435
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 19074,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Fire a bowl in Barbarian Village",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            1923
+        ],
+        "locations": [
+            {
+                "x": "3085",
+                "y": "3410",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 15,
+        "useRegionID": true,
+        "skill": "CRAFTING"
+    },
+    {
+        "id": 96567,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill a Cave Bug",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            481
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 49703,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Make a Waka canoe in Lumbridge",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "3243",
+                "y": "3237",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 150,
+        "useRegionID": false,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 75298,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Pickpocket a man in Edgeville",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            22521
+        ],
+        "locations": [
+            {
+                "x": "3100",
+                "y": "3506",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 8,
+        "useRegionID": true,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 83632,
+        "tier": 2,
+        "type": "MAGIC",
+        "description": "Cast the Varrock Teleport spell",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            14286869
+        ],
+        "locations": [],
+        "gainedXP": 25,
+        "useRegionID": false,
+        "skill": "MAGIC"
+    },
+    {
+        "id": 92646,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Chop a Yew tree in Edgeville",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            1515
+        ],
+        "locations": [
+            {
+                "x": "3087",
+                "y": "3474",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 175,
+        "useRegionID": true,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 45574,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Smith Steel platelegs in Varrock",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            1069
+        ],
+        "locations": [
+            {
+                "x": "3188",
+                "y": "3428",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 112.5,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 79495,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Catch a trout in Barbarian Village",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            335
+        ],
+        "locations": [
+            {
+                "x": "3102",
+                "y": "3424",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 50,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 81826,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Cook an Anchovy pizza in the Cooking Guild",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            2297
+        ],
+        "locations": [
+            {
+                "x": "3146",
+                "y": "3452",
+                "plane": "1"
+            },
+            {
+                "x": "3145",
+                "y": "3452",
+                "plane": "1"
+            },
+            {
+                "x": "3144",
+                "y": "3452",
+                "plane": "1"
+            },
+            {
+                "x": "3143",
+                "y": "3452",
+                "plane": "1"
+            }
+        ],
+        "gainedXP": 39,
+        "useRegionID": false,
+        "skill": "COOKING"
+    },
+    {
+        "id": 120,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Steal a cup of tea from the Varrock tea stall",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            1978
+        ],
+        "locations": [
+            {
+                "x": "3267",
+                "y": "3412",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 16,
+        "useRegionID": true,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 57020,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Mine some Mithril ore near Lumbridge swamp",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            447
+        ],
+        "locations": [
+            {
+                "x": "3146",
+                "y": "3149",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 80,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 93874,
+        "tier": 5,
+        "type": "CREATE",
+        "description": "Smelt an Adamant bar at the Edgeville furnace",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            2361
+        ],
+        "locations": [
+            {
+                "x": "3096",
+                "y": "3503",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 37.5,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 79017,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Craft some Water runes",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            555
+        ],
+        "locations": [
+            {
+                "x": "2720",
+                "y": "4833",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "RUNECRAFT"
+    },
+    {
+        "id": 63944,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Mine some Limestone",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            3211
+        ],
+        "locations": [
+            {
+                "x": "3371",
+                "y": "3498",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 26.5,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 92809,
+        "tier": 4,
+        "type": "MAGIC",
+        "description": "Cast the Senntisten Teleport spell",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            14286941
+        ],
+        "locations": [],
+        "gainedXP": 60,
+        "useRegionID": false,
+        "skill": "MAGIC"
+    },
+    {
+        "id": 914,
+        "tier": 2,
+        "type": "ENTER",
+        "description": "Enter the Crafting Guild",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "2933",
+                "y": "3288",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "CRAFTING"
+    },
+    {
+        "id": 48271,
+        "tier": 1,
+        "type": "ENTER",
+        "description": "Get locked in the Port Sarim jail",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "3014",
+                "y": "3181",
+                "plane": "0"
+            },
+            {
+                "x": "3014",
+                "y": "3180",
+                "plane": "0"
+            },
+            {
+                "x": "3013",
+                "y": "3181",
+                "plane": "0"
+            },
+            {
+                "x": "3013",
+                "y": "3180",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 89652,
+        "tier": 3,
+        "type": "ENTER",
+        "description": "Enter the Heroes' Guild",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "2901",
+                "y": "3511",
+                "plane": "0"
+            },
+            {
+                "x": "2901",
+                "y": "3510",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 50616,
+        "tier": 3,
+        "type": "ENTER",
+        "description": "Enter the Warrior's Guild",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "2876",
+                "y": "3546",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "STRENGTH"
+    },
+    {
+        "id": 44624,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill the Giant Mole",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            5779
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 60570,
+        "tier": 2,
+        "type": "MAGIC",
+        "description": "Cast the Falador Teleport spell",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            14286875
+        ],
+        "locations": [],
+        "gainedXP": 37,
+        "useRegionID": false,
+        "skill": "MAGIC"
+    },
+    {
+        "id": 11881,
+        "tier": 3,
+        "type": "MAGIC",
+        "description": "Cast the Trollheim Teleport spell",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            14286898
+        ],
+        "locations": [],
+        "gainedXP": 61,
+        "useRegionID": false,
+        "skill": "MAGIC"
+    },
+    {
+        "id": 27569,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Defeat K'ril Tsutsaroth",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            3129
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 61910,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Defeat General Graador",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            2215
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 40414,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Defeat Commander Zilyana",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            2205
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 90486,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Defeat Kree'arra",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            3162
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 55612,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip either a Bandos chestplate or tassets",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            11832,
+            11834
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 36159,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a pair of Dragon Boots",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            11840
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 17974,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain an Armadyl Crossbow",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            11785
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 94670,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip any piece of Armadyl armor",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            11826
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 9462340,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip any completed Godsword",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            11802,
+            11804,
+            11806,
+            11808,
+            26233
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 5610,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Dragon defender",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            12954
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 3977,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip an Imcando hammer",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            25644
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 19348,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Craft some Mind runes",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            558
+        ],
+        "locations": [
+            {
+                "x": "2787",
+                "y": "4839",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "RUNECRAFT"
+    },
+    {
+        "id": 88298,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Create an Attack potion in Taverly",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            121
+        ],
+        "locations": [
+            {
+                "x": "2896",
+                "y": "3428",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 25,
+        "useRegionID": true,
+        "skill": "HERBLORE"
+    },
+    {
+        "id": 74471,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain an Eternal crystal from Cerberus",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            13227
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 43456,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Use the Obstacle pipe in the Taverly Dungeon",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "2886",
+                "y": "9799",
+                "plane": "0"
+            },
+            {
+                "x": "2892",
+                "y": "9799",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 10,
+        "useRegionID": false,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 47514,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Smelt a Blurite bar in Falador",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            9467
+        ],
+        "locations": [
+            {
+                "x": "2975",
+                "y": "3369",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 8,
+        "useRegionID": false,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 33578,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Check the health of your Willow Tree in Taverly",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            0
+        ],
+        "locations": [
+            {
+                "x": "2934",
+                "y": "3438",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 1456.5,
+        "useRegionID": true,
+        "skill": "FARMING"
+    },
+    {
+        "id": 24557,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Smith a Bronze dagger at Doric's anvil",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            1205
+        ],
+        "locations": [
+            {
+                "x": "2955",
+                "y": "3435",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 12.5,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 19699,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Craft a Leather body in the Crafting Guild",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            1129
+        ],
+        "locations": [
+            {
+                "x": "2926",
+                "y": "3280",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 25,
+        "useRegionID": true,
+        "skill": "CRAFTING"
+    },
+    {
+        "id": 53524,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Mine some gold at the Rimmington mine",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            444
+        ],
+        "locations": [
+            {
+                "x": "2978",
+                "y": "3247",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 65,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 89102,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill a Hobgoblin near the Crafting Guild",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            3289,
+            3288,
+            3287,
+            3286
+        ],
+        "locations": [
+            {
+                "x": "2911",
+                "y": "3285",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 13354,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Mudskipper",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            4820,
+            4821
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 9591,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Skeletal Wyvern",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            465,
+            466,
+            467,
+            468
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 747,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Complete a lap of the Falador Rooftop course",
+        "region": "ASGARNIA",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "3029",
+                "y": "3350",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 180,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 63142,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Chop an Oak tree south of the Falador farm",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            1521
+        ],
+        "locations": [
+            {
+                "x": "3030",
+                "y": "3273",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 37.5,
+        "useRegionID": true,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 80011,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Harvest some Marigolds at the Falador farm",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            6010,
+            8214
+        ],
+        "locations": [
+            {
+                "x": "3030",
+                "y": "3273",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 47,
+        "useRegionID": true,
+        "skill": "FARMING"
+    },
+    {
+        "id": 42540,
+        "tier": 1,
+        "type": "ENTER",
+        "description": "Enter the Brimhaven Dungeon",
+        "region": "KARAMJA",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2713",
+                "y": "9564",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "HITPOINTS"
+    },
+    {
+        "id": 96735,
+        "tier": 3,
+        "type": "ENTER",
+        "description": "Enter the Inferno",
+        "region": "KARAMJA",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "15710",
+                "y": "1632",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "HITPOINTS"
+    },
+    {
+        "id": 15927,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any TzHaar weapon",
+        "region": "KARAMJA",
+        "completionIDs": [
+            6527,
+            6528,
+            6522,
+            6523,
+            6526,
+            6525
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 67591,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Fire cape",
+        "region": "KARAMJA",
+        "completionIDs": [
+            6570
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 16818,
+        "tier": 6,
+        "type": "EQUIP",
+        "description": "Equip an Infernal cape",
+        "region": "KARAMJA",
+        "completionIDs": [
+            21295
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 10534,
+        "tier": 3,
+        "type": "LOOT",
+        "description": "Obtain an Obisidan armor piece drop",
+        "region": "KARAMJA",
+        "completionIDs": [
+            21298,
+            21301,
+            21304
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 1648,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Check the health of your Calquat tree",
+        "region": "KARAMJA",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2793",
+                "y": "3102",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 12096,
+        "useRegionID": true,
+        "skill": "FARMING"
+    },
+    {
+        "id": 85140,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Fish a lobster at Musa Point",
+        "region": "KARAMJA",
+        "completionIDs": [
+            377
+        ],
+        "locations": [
+            {
+                "x": "2918",
+                "y": "3174",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 90,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 90738,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Fish an Anchovy on Entrana",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            321
+        ],
+        "locations": [
+            {
+                "x": "2875",
+                "y": "3336",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 40,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 19156,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Pirate's hook",
+        "region": "KARAMJA",
+        "completionIDs": [
+            2997
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 7591,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Cross a plank in the Brimhaven Agility Arena",
+        "region": "KARAMJA",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2795",
+                "y": "9567",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 6,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 50754,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Catch a Karambwan",
+        "region": "KARAMJA",
+        "completionIDs": [
+            3142
+        ],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "FISHING"
+    },
+    {
+        "id": 62409,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Cook a Karambwan in Brimhaven",
+        "region": "KARAMJA",
+        "completionIDs": [
+            3144
+        ],
+        "locations": [
+            {
+                "x": "2811",
+                "y": "3162",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 190,
+        "useRegionID": true,
+        "skill": "COOKING"
+    },
+    {
+        "id": 4617,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Check the health of your apple tree in Brimhaven",
+        "region": "KARAMJA",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2770",
+                "y": "3210",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 1199.5,
+        "useRegionID": true,
+        "skill": "FARMING"
+    },
+    {
+        "id": 74850,
+        "tier": 4,
+        "type": "CREATE",
+        "description": "Check the health of your Spirit tree in Brimhaven",
+        "region": "KARAMJA",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2770",
+                "y": "3210",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 19301,
+        "useRegionID": true,
+        "skill": "FARMING"
+    },
+    {
+        "id": 78578,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Mine some gold ore north of Brimhaven",
+        "region": "KARAMJA",
+        "completionIDs": [
+            444,
+            65
+        ],
+        "locations": [
+            {
+                "x": "2734",
+                "y": "3224",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 65,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 80884,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill a Moss Giant in the Brimhaven Dungeon",
+        "region": "KARAMJA",
+        "completionIDs": [
+            2090,
+            2091,
+            2092,
+            2093
+        ],
+        "locations": [
+            {
+                "x": "2651",
+                "y": "9573",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 45306,
+        "tier": 2,
+        "type": "LOOT",
+        "description": "Obtain Runite limbs from a Steel dragon in the Brimhaven Dungeon",
+        "region": "KARAMJA",
+        "completionIDs": [
+            9431
+        ],
+        "locations": [
+            {
+                "x": "2707",
+                "y": "9445",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 7099,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Smith Iron platelegs near Tai Bwo Wannai",
+        "region": "KARAMJA",
+        "completionIDs": [
+            1067
+        ],
+        "locations": [
+            {
+                "x": "2786",
+                "y": "3098",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 75,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 9908,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Jogre",
+        "region": "KARAMJA",
+        "completionIDs": [
+            2094,
+            2234
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 86814,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Harpie Bug Swarm",
+        "region": "KARAMJA",
+        "completionIDs": [
+            464
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 90387,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill a Pirate in Brimhaven",
+        "region": "KARAMJA",
+        "completionIDs": [
+            522
+        ],
+        "locations": [
+            {
+                "x": "2782",
+                "y": "3173",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 15792,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill an Oomlie bird",
+        "region": "KARAMJA",
+        "completionIDs": [
+            2062
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 28225,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Chop a teak tree in the Hardwood grove",
+        "region": "KARAMJA",
+        "completionIDs": [
+            6333
+        ],
+        "locations": [
+            {
+                "x": "2822",
+                "y": "3085",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 85,
+        "useRegionID": true,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 73363,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Craft some Nature runes",
+        "region": "KARAMJA",
+        "completionIDs": [
+            561
+        ],
+        "locations": [
+            {
+                "x": "2396",
+                "y": "4838",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "RUNECRAFT"
+    },
+    {
+        "id": 65986,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill a Jungle spider",
+        "region": "KARAMJA",
+        "completionIDs": [
+            3020
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 49921,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Mine a gem rock in Shilo Village",
+        "region": "KARAMJA",
+        "completionIDs": [
+            1617,
+            1619,
+            1621,
+            1623,
+            1625,
+            1627,
+            1629
+        ],
+        "locations": [
+            {
+                "x": "2839",
+                "y": "2980",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 61990,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Catch a salmon in Shilo Village",
+        "region": "KARAMJA",
+        "completionIDs": [
+            331
+        ],
+        "locations": [
+            {
+                "x": "2839",
+                "y": "2980",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 70,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 44831,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Smelt a Mithril bar in Shilo Village",
+        "region": "KARAMJA",
+        "completionIDs": [
+            2359
+        ],
+        "locations": [
+            {
+                "x": "2839",
+                "y": "2980",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 30,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 97847,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Smouldering stone",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            13233
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 82513,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Primordial crystal",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            13231
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 35290,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Pegasian crystal",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            13229
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 84836,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Draconic visage",
+        "region": "KARAMJA",
+        "completionIDs": [
+            11286
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 13133,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Wyvern visage ",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            21637
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 13827,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Staff of the dead",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            11791
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 9610,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Saradomin sword",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            11838
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 79192,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Zamorakian spear",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            11824
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 78603,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Nihil horn",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            26372
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 1593,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any piece of the Rogues outfit",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            5553,
+            5554,
+            5555,
+            5556,
+            5557
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 96880,
+        "tier": 1,
+        "type": "EQUIP",
+        "description": "Equip any Angler outfit piece ",
+        "region": "KANDARIN",
+        "completionIDs": [
+            13258,
+            13259,
+            13260,
+            13261
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 83705,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain any piece of Torva armor ",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            26376,
+            26378,
+            26380
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 39991,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain Zaryte vambraces",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            26235
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 25278,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip any Ancient ceremonial outfit piece ",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            26221,
+            26223,
+            26225,
+            26227,
+            26229
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 91817,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Black demon in the Taverly Dungeon",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            240,
+            1432,
+            2048,
+            2049,
+            2050,
+            2051,
+            2052,
+            5874,
+            5875,
+            5876,
+            5877,
+            6295,
+            6357,
+            7242,
+            7243,
+            7874,
+            7875,
+            7876
+        ],
+        "locations": [
+            {
+                "x": "2851",
+                "y": "9783",
+                "plane": "0"
+            },
+            {
+                "x": "2838",
+                "y": "9797",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 87950,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Ring of endurance",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24735,
+            24736
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 68016,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Hallowed grapple",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24721
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 63113,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Hallowed ring",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24731
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 92911,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Catch a swamp lizard",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            10149
+        ],
+        "locations": [
+            {
+                "x": "3545",
+                "y": "3432",
+                "plane": "0"
+            },
+            {
+                "x": "3679",
+                "y": "3408",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 152,
+        "useRegionID": true,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 51678,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Complete a lap of the Werewolf agility course",
+        "region": "MORYTANIA",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "3564",
+                "y": "9892",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 380,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 82108,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill a Crawling hand in the Slayer Tower",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            120,
+            448,
+            449,
+            450,
+            451,
+            452,
+            453,
+            454,
+            455,
+            456,
+            457
+        ],
+        "locations": [
+            {
+                "x": "3426",
+                "y": "3551",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 3056,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Banshee in the Slayer Tower",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            414,
+            7272,
+            7390,
+            7391
+        ],
+        "locations": [
+            {
+                "x": "3426",
+                "y": "3551",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 36999,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Bloodveld in the Slayer Tower",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            484,
+            485,
+            486,
+            487,
+            3138,
+            7034,
+            7276,
+            7397,
+            7398,
+            9573,
+            9610,
+            9611
+        ],
+        "locations": [
+            {
+                "x": "3426",
+                "y": "3551",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 90034,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill an Aberrant spectre in the Slayer Tower",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "locations": [
+            {
+                "x": "3426",
+                "y": "3551",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 40734,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Mystic hat (dark)",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4099
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 32668,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip an Abyssal whip in the Slayer Tower",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4151
+        ],
+        "locations": [
+            {
+                "x": "3426",
+                "y": "3551",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 86626,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Granite maul",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4153
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 98371,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip Rune boots in the Slayer Tower",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4131
+        ],
+        "locations": [
+            {
+                "x": "3426",
+                "y": "3551",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 79828,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Gold coffin",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            25467
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 43852,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any Zealot's outfit piece",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            25440,
+            25438,
+            25436,
+            25434
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 94276,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip an Amulet of the damned",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            12853
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 28465,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Mystic robe bottom (dark) in the Slayer Tower",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4103
+        ],
+        "locations": [
+            {
+                "x": "3426",
+                "y": "3551",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 84853,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Phasmatys flag",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            8971
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 29926,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any Tricorn hat",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            8959,
+            8960,
+            8961,
+            8962,
+            8963,
+            8964,
+            8965
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 36486,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Cave horror",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            1047,
+            1048,
+            1049,
+            1050,
+            1051
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 5923,
+        "tier": 3,
+        "type": "LOOT",
+        "description": "Obtain a Black mask",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            8921,
+            8901
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 47672,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Chop a Mahogany tree on Mos Le'Harmless",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            6332
+        ],
+        "locations": [
+            {
+                "x": "3819",
+                "y": "3057",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 125,
+        "useRegionID": true,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 51806,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Harvest some sweetcorn at the allotment patch near Canifis",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            5986,
+            7088
+        ],
+        "locations": [
+            {
+                "x": "3602",
+                "y": "3524",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 19,
+        "useRegionID": true,
+        "skill": "FARMING"
+    },
+    {
+        "id": 22836,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any piece of Verac's equipment",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4753,
+            4755,
+            4757,
+            4759
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 27899,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any piece of Dharok's equipment",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4716,
+            4718,
+            4720,
+            4722
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 16790,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any piece of Ahrim's equipment",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4708,
+            4710,
+            4712,
+            4714
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 81646,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any piece of Guthan's equipment",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4724,
+            4726,
+            4728,
+            4730
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 87292,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any piece of Karil's equipment",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4732,
+            4734,
+            4736,
+            4738
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 50994,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any piece of Torag's equipment",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4745,
+            4747,
+            4749,
+            4751
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 25157,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Complete a lap of the Canifis rooftop course",
+        "region": "MORYTANIA",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "3509",
+                "y": "3494",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 175,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 19269,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Smelt a Steel bar in Port Phasmatys",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            2353
+        ],
+        "locations": [
+            {
+                "x": "3672",
+                "y": "3485",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 17.5,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 96510,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Sacrifice Big bones at the Ectofuntus",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            1931
+        ],
+        "locations": [
+            {
+                "x": "3659",
+                "y": "3521",
+                "plane": "0"
+            },
+            {
+                "x": "3661",
+                "y": "3515",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 60,
+        "useRegionID": true,
+        "skill": "PRAYER"
+    },
+    {
+        "id": 90714,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Chop the Blisterwood tree",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24691
+        ],
+        "locations": [],
+        "gainedXP": 76,
+        "useRegionID": false,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 77138,
+        "tier": 5,
+        "type": "CREATE",
+        "description": "Smith a Rune scimitar in Darkmeyer",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            1333
+        ],
+        "locations": [
+            {
+                "x": "3661",
+                "y": "3363",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 150,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 92678,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Defeat The Nightmare of Ashihama",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            378,
+            9425,
+            9426,
+            9427,
+            9428,
+            9429,
+            9430,
+            9431,
+            9432,
+            9433,
+            9460,
+            9461,
+            9462,
+            9463,
+            9464
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 79808,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Defeat Phosani's Nightmare",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            377,
+            9416,
+            9417,
+            9418,
+            9419,
+            9420,
+            9421,
+            9422,
+            9423,
+            9424,
+            11153,
+            11154,
+            11155
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 98010,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Nightmare staff",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24422
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 9707,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip an Inquisitor's mace",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24417
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 92292,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip any Inquisitor's armor piece",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24419,
+            24420,
+            24421
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 96222,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain an Eldritch orb",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24517
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 55900,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Harmonised orb",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24511
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 92916,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Volatile orb",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24514
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 8916,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip an Avernic defender",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            22322
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 88415,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip any Justiciar armor piece",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            22326,
+            22327,
+            22328
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 59014,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Sanguinesti staff",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            22323
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 67905,
+        "tier": 6,
+        "type": "EQUIP",
+        "description": "Equip the Scythe of vitur",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            22325
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 33525,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Ghrazi rapier",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            22324
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 4670,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip any Void knight armor piece",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            8839,
+            8840,
+            8842,
+            11665,
+            11664,
+            11663
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 61729,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Void knight mace",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            8841
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 77995,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Defeat the Abyssal Sire",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            5886,
+            5887,
+            5888,
+            5889,
+            5890,
+            5891,
+            5908
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 35999,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip an Abyssal bludgeon",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            13263
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 70944,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip an Abyssal dagger",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            13265
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 8605,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill an Otherworldly being",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            2843
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 92833,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Dragon longsword",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            1305
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 72691,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Defeat the Kalphite queen",
+        "region": "DESERT",
+        "completionIDs": [
+            128,
+            963,
+            965,
+            4303,
+            4304,
+            6500,
+            6501
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 53392,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Dragon chainbody",
+        "region": "DESERT",
+        "completionIDs": [
+            2513
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 2912,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Dragon 2h sword",
+        "region": "DESERT",
+        "completionIDs": [
+            7158
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 3186,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill an Al kharid warrior",
+        "region": "DESERT",
+        "completionIDs": [
+            3292
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 1802,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill a Vulture",
+        "region": "DESERT",
+        "completionIDs": [
+            1267,
+            1268
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 67806,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Chop the teak tree near Uzer",
+        "region": "DESERT",
+        "completionIDs": [
+            6333
+        ],
+        "locations": [
+            {
+                "x": "3485",
+                "y": "3098",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 85,
+        "useRegionID": true,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 36452,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Complete a lap of the Pollnivneach rooftop course",
+        "region": "DESERT",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "3362",
+                "y": "2983",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 540,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 53879,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Create a Prayer potion in Nardah",
+        "region": "DESERT",
+        "completionIDs": [
+            139
+        ],
+        "locations": [
+            {
+                "x": "3421",
+                "y": "2911",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 87.5,
+        "useRegionID": true,
+        "skill": "HERBLORE"
+    },
+    {
+        "id": 41319,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip any piece of the Spirit angler outfit",
+        "region": "DESERT",
+        "completionIDs": [
+            25592,
+            25594,
+            25596,
+            25598
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 34148,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Fish a lobster near the Ruins of Unkah",
+        "region": "DESERT",
+        "completionIDs": [
+            377,
+            90
+        ],
+        "locations": [
+            {
+                "x": "3163",
+                "y": "2796",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 90,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 65703,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Tome of Water",
+        "region": "DESERT",
+        "completionIDs": [
+            25574
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 4853,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip Osmumten's fang",
+        "region": "DESERT",
+        "completionIDs": [
+            26219
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 17812,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip Tumeken's shadow",
+        "region": "DESERT",
+        "completionIDs": [
+            25987,
+            25989
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 77256,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Lightbearer",
+        "region": "DESERT",
+        "completionIDs": [
+            25975
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 23260,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip Elidinis' ward",
+        "region": "DESERT",
+        "completionIDs": [
+            25985
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 8134,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip the Keris partisan",
+        "region": "DESERT",
+        "completionIDs": [
+            25979
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 88435,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip a Keris",
+        "region": "DESERT",
+        "completionIDs": [
+            10581
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 43427,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip any Masori armor piece",
+        "region": "DESERT",
+        "completionIDs": [
+            25969,
+            25971,
+            26217
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 9247,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Smelt a Steel bar at the Ruins of Ullek",
+        "region": "DESERT",
+        "completionIDs": [
+            2353
+        ],
+        "locations": [
+            {
+                "x": "3412",
+                "y": "2827",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 17.5,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 57457,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip the Pharaoh's sceptre",
+        "region": "DESERT",
+        "completionIDs": [
+            9044
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 6143,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Dust devil in the Smoke Dungeon",
+        "region": "DESERT",
+        "completionIDs": [
+            423,
+            7249,
+            11238
+        ],
+        "locations": [
+            {
+                "x": "3230",
+                "y": "9381",
+                "plane": "0"
+            },
+            {
+                "x": "3277",
+                "y": "9366",
+                "plane": "0"
+            },
+            {
+                "x": "3189",
+                "y": "9363",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 75299,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Mine some coal in the Mining camp",
+        "region": "DESERT",
+        "completionIDs": [
+            453
+        ],
+        "locations": [
+            {
+                "x": "3280",
+                "y": "3028",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 50,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 20859,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Fletch a longbow in Sophanem",
+        "region": "DESERT",
+        "completionIDs": [
+            839
+        ],
+        "locations": [
+            {
+                "x": "3298",
+                "y": "2787",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 10,
+        "useRegionID": true,
+        "skill": "FLETCHING"
+    },
+    {
+        "id": 57521,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Fletch a Steel dart at the Bedabin camp",
+        "region": "DESERT",
+        "completionIDs": [
+            808
+        ],
+        "locations": [
+            {
+                "x": "3171",
+                "y": "3036",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 75,
+        "useRegionID": true,
+        "skill": "FLETCHING"
+    },
+    {
+        "id": 53379,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Mine a 10kg sandstone at the quarry",
+        "region": "DESERT",
+        "completionIDs": [
+            6977
+        ],
+        "locations": [
+            {
+                "x": "3167",
+                "y": "2914",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 60,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 24342,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Catch a Golden warbler",
+        "region": "DESERT",
+        "completionIDs": [
+            10090
+        ],
+        "locations": [
+            {
+                "x": "3402",
+                "y": "3103",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 47,
+        "useRegionID": true,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 46952,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Catch an Orange salamander",
+        "region": "DESERT",
+        "completionIDs": [
+            10146
+        ],
+        "locations": [
+            {
+                "x": "3297",
+                "y": "2730",
+                "plane": "0"
+            },
+            {
+                "x": "3402",
+                "y": "3103",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 224,
+        "useRegionID": true,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 12777,
+        "tier": 4,
+        "type": "CREATE",
+        "description": "Mine some Adamant ore at the Ruins of Ullek",
+        "region": "DESERT",
+        "completionIDs": [
+            449
+        ],
+        "locations": [
+            {
+                "x": "3371",
+                "y": "2778",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 95,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 50637,
+        "tier": 3,
+        "type": "ENTER",
+        "description": "Enter the Legend's Guild",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2729",
+                "y": "3374",
+                "plane": "0"
+            },
+            {
+                "x": "2728",
+                "y": "3374",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "HITPOINTS"
+    },
+    {
+        "id": 9601,
+        "tier": 2,
+        "type": "ENTER",
+        "description": "Enter the Ranging Guild",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2659",
+                "y": "3437",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "RANGED"
+    },
+    {
+        "id": 22058,
+        "tier": 3,
+        "type": "ENTER",
+        "description": "Enter the Fishing Guild",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2611",
+                "y": "3394",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "FISHING"
+    },
+    {
+        "id": 4157,
+        "tier": 4,
+        "type": "CREATE",
+        "description": "Chop a magic tree in the Tree Gnome Stronghold",
+        "region": "KANDARIN",
+        "completionIDs": [
+            1513
+        ],
+        "locations": [
+            {
+                "x": "2445",
+                "y": "3419",
+                "plane": "0"
+            },
+            {
+                "x": "2416",
+                "y": "3418",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 250,
+        "useRegionID": true,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 23979,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Complete a lap of the Gnome Agility Course",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2435",
+                "y": "3425",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 39,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 15379,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Pick a papaya from your papaya tree at the Gnome Stronghold",
+        "region": "KANDARIN",
+        "completionIDs": [
+            5972
+        ],
+        "locations": [
+            {
+                "x": "2461",
+                "y": "3424",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 27,
+        "useRegionID": true,
+        "skill": "FARMING"
+    },
+    {
+        "id": 29813,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Spin a bowstring at a spinning wheel in the Gnome Stronghold",
+        "region": "KANDARIN",
+        "completionIDs": [
+            1777
+        ],
+        "locations": [
+            {
+                "x": "2466",
+                "y": "3423",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 15,
+        "useRegionID": true,
+        "skill": "CRAFTING"
+    },
+    {
+        "id": 76759,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Bloodveld in the Stronghold Slayer Dungeon",
+        "region": "KANDARIN",
+        "completionIDs": [
+            484,
+            485,
+            486,
+            487,
+            3138,
+            7034,
+            7276,
+            7397,
+            7398,
+            9573,
+            9610,
+            9611
+        ],
+        "locations": [
+            {
+                "x": 2407,
+                "y": 9816,
+                "plane": 0
+            },
+            {
+                "x": 2461,
+                "y": 9816,
+                "plane": 0
+            },
+            {
+                "x": 2458,
+                "y": 9768,
+                "plane": 0
+            },
+            {
+                "x": 2406,
+                "y": 9769,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 34306,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Fire giant in the Stronghold Slayer Dungeon",
+        "region": "KANDARIN",
+        "completionIDs": [
+            2075,
+            2076,
+            2077,
+            2078,
+            2079,
+            2080,
+            2081,
+            2082,
+            2083,
+            2084,
+            7251,
+            7252
+        ],
+        "locations": [
+            {
+                "x": 2407,
+                "y": 9816,
+                "plane": 0
+            },
+            {
+                "x": 2461,
+                "y": 9816,
+                "plane": 0
+            },
+            {
+                "x": 2458,
+                "y": 9768,
+                "plane": 0
+            },
+            {
+                "x": 2406,
+                "y": 9769,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 2133,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Aberrant spectre in the Stronghold Slayer Dungeon",
+        "region": "KANDARIN",
+        "completionIDs": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "locations": [
+            {
+                "x": 2407,
+                "y": 9816,
+                "plane": 0
+            },
+            {
+                "x": 2461,
+                "y": 9816,
+                "plane": 0
+            },
+            {
+                "x": 2458,
+                "y": 9768,
+                "plane": 0
+            },
+            {
+                "x": 2406,
+                "y": 9769,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 42885,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Hellhound in the Stronghold Slayer Dungeon",
+        "region": "KANDARIN",
+        "completionIDs": [
+            104,
+            105,
+            135,
+            3133,
+            5054,
+            6387,
+            6613,
+            6614,
+            7256,
+            7877,
+            7935,
+            11463
+        ],
+        "locations": [
+            {
+                "x": 2407,
+                "y": 9816,
+                "plane": 0
+            },
+            {
+                "x": 2461,
+                "y": 9816,
+                "plane": 0
+            },
+            {
+                "x": 2458,
+                "y": 9768,
+                "plane": 0
+            },
+            {
+                "x": 2406,
+                "y": 9769,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 20022,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Brutal Green Dragon in the Ancient Cavern",
+        "region": "KANDARIN",
+        "completionIDs": [
+            2918,
+            8081
+        ],
+        "locations": [
+            {
+                "x": "1760",
+                "y": "5344",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 1123,
+        "tier": 2,
+        "type": "ENTER",
+        "description": "Enter the Ancient Cavern",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "1763",
+                "y": "5365",
+                "plane": "1"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "HITPOINTS"
+    },
+    {
+        "id": 61747,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Fighter torso",
+        "region": "KANDARIN",
+        "completionIDs": [
+            10551
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 89929,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Cross the balancing ledge at the Barbarian Agility Course",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2540",
+                "y": "3554",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 22,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 4099,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Cross the log balance by the coal trucks",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2586",
+                "y": "3474",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 8.5,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 43342,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Fish a minnow at the Fishing Guild",
+        "region": "KANDARIN",
+        "completionIDs": [
+            21356
+        ],
+        "locations": [
+            {
+                "x": "2614",
+                "y": "3441",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 26,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 13499,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Kill a Demonic gorilla",
+        "region": "KANDARIN",
+        "completionIDs": [
+            7098,
+            7144,
+            7145,
+            7146,
+            7147,
+            7148,
+            7149,
+            7152
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 68783,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Zenyte shard",
+        "region": "KANDARIN",
+        "completionIDs": [
+            19529
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 47054,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Ring of suffering",
+        "region": "KANDARIN",
+        "completionIDs": [
+            19550,
+            19710,
+            20655,
+            20657
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 95877,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Tortoise in the pen in the Gnome Stronghold",
+        "region": "KANDARIN",
+        "completionIDs": [
+            4912,
+            6017,
+            6075,
+            6076
+        ],
+        "locations": [
+            {
+                "x": "2422",
+                "y": "3529",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 17249,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Catch a monkfish",
+        "region": "KANDARIN",
+        "completionIDs": [
+            7944
+        ],
+        "locations": [],
+        "gainedXP": 120,
+        "useRegionID": false,
+        "skill": "FISHING"
+    },
+    {
+        "id": 28932,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Kill a Cave kraken",
+        "region": "KANDARIN",
+        "completionIDs": [
+            492
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 31353,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill a Gnome",
+        "region": "KANDARIN",
+        "completionIDs": [
+            1238,
+            1433,
+            2067,
+            2068,
+            2420,
+            2421,
+            2422,
+            2544,
+            2546,
+            2657,
+            3142,
+            3143,
+            3144,
+            3145,
+            3146,
+            3147,
+            3148,
+            3149,
+            3150,
+            3151,
+            3152,
+            3153,
+            3154,
+            3155,
+            3156,
+            3157,
+            4233,
+            4234,
+            4907,
+            4908,
+            4909,
+            4910,
+            4911,
+            4973,
+            4974,
+            4975,
+            4976,
+            4977,
+            4978,
+            4979,
+            5130,
+            5132,
+            5309,
+            5518,
+            5966,
+            5967,
+            5968,
+            5969,
+            5970,
+            5971,
+            5972,
+            5973,
+            6053,
+            6054,
+            6055,
+            6077,
+            6078,
+            6079,
+            6080,
+            6081,
+            6082,
+            6083,
+            6084,
+            6085,
+            6086,
+            6087,
+            6094,
+            6095,
+            6096,
+            6097,
+            6098,
+            6099,
+            6574,
+            8848,
+            11199
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 86095,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip an Abyssal tentacle",
+        "region": "KANDARIN",
+        "completionIDs": [
+            12006
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 56329,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip an Uncharged trident",
+        "region": "KANDARIN",
+        "completionIDs": [
+            11908
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 33363,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Jar of dirt",
+        "region": "KANDARIN",
+        "completionIDs": [
+            12007
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 53154,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Jar of decay",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            22106
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 50062,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Jar of dreams",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            24495
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 94069,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Jar of miasma",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            13277
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 33375,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Jar of sand",
+        "region": "DESERT",
+        "completionIDs": [
+            12885
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 10408,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Jar of smoke",
+        "region": "KANDARIN",
+        "completionIDs": [
+            25524
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 78558,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Jar of souls",
+        "region": "ASGARNIA",
+        "completionIDs": [
+            13245
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 39980,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Jar of spirits",
+        "region": "WILDERNESS",
+        "completionIDs": [
+            25521
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 18521,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Jar of stone",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            21745
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 59588,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Jar of swamp",
+        "region": "TIRANNWN",
+        "completionIDs": [
+            12936
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 67861,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Catch a Ruby harvest",
+        "region": "KANDARIN",
+        "completionIDs": [
+            10020
+        ],
+        "locations": [],
+        "gainedXP": 24,
+        "useRegionID": false,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 6765,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Catch a Dashing kebbit",
+        "region": "KANDARIN",
+        "completionIDs": [
+            10127
+        ],
+        "locations": [],
+        "gainedXP": 156,
+        "useRegionID": false,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 1831,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Catch a leaping trout",
+        "region": "KANDARIN",
+        "completionIDs": [
+            11328
+        ],
+        "locations": [
+            {
+                "x": "2519",
+                "y": "3498",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 50,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 81054,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Catch a leaping salmon",
+        "region": "KANDARIN",
+        "completionIDs": [
+            11330
+        ],
+        "locations": [
+            {
+                "x": "2519",
+                "y": "3498",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 70,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 59527,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Catch a leaping sturgeon",
+        "region": "KANDARIN",
+        "completionIDs": [
+            11332
+        ],
+        "locations": [
+            {
+                "x": "2519",
+                "y": "3498",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 80,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 49875,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill an Ogre in the Combat Training Camp",
+        "region": "KANDARIN",
+        "completionIDs": [
+            136,
+            864,
+            865,
+            1153,
+            2095,
+            2096,
+            2233,
+            2417,
+            2418,
+            4362,
+            4363,
+            4368,
+            4369,
+            4370,
+            4371,
+            4372,
+            4382,
+            4383,
+            4384,
+            4386,
+            4387,
+            4388,
+            4389,
+            4390,
+            4391,
+            4392,
+            4393,
+            4394,
+            4395,
+            4396,
+            4401,
+            4402,
+            4403,
+            4404,
+            4571,
+            4858,
+            4859,
+            7989,
+            7990,
+            7991,
+            7992
+        ],
+        "locations": [
+            {
+                "x": "2518",
+                "y": "3379",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 58940,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Chaos druid in the Chaos Druid Tower",
+        "region": "KANDARIN",
+        "completionIDs": [
+            520,
+            532
+        ],
+        "locations": [
+            {
+                "x": "2561",
+                "y": "3356",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 2506,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Pick a tarromin from the herb patch at the Ardougne farm",
+        "region": "KANDARIN",
+        "completionIDs": [
+            203
+        ],
+        "locations": [
+            {
+                "x": "2665",
+                "y": "3371",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 18,
+        "useRegionID": true,
+        "skill": "FARMING"
+    },
+    {
+        "id": 35099,
+        "tier": 5,
+        "type": "CREATE",
+        "description": "Complete a lap of the Ardougne Rooftop course",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2668",
+                "y": "3307",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 529,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 42095,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Pickpocket a Knight of Ardougne",
+        "region": "KANDARIN",
+        "completionIDs": [
+            22531
+        ],
+        "locations": [
+            {
+                "x": "2665",
+                "y": "3307",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 84.5,
+        "useRegionID": true,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 31989,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Steal from a silk stall in the Ardougne market",
+        "region": "KANDARIN",
+        "completionIDs": [
+            950
+        ],
+        "locations": [
+            {
+                "x": "2665",
+                "y": "3307",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 24,
+        "useRegionID": true,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 55650,
+        "tier": 3,
+        "type": "ENTER",
+        "description": "Enter the Ardougne Zoo unicorn pen",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2584",
+                "y": "3216",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "HITPOINTS"
+    },
+    {
+        "id": 93604,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Newtroost",
+        "region": "KANDARIN",
+        "completionIDs": [
+            3605
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 46309,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Smelt a bronze bar at the furnace in Ardougne",
+        "region": "KANDARIN",
+        "completionIDs": [
+            2349
+        ],
+        "locations": [
+            {
+                "x": "2601",
+                "y": "3311",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 6.5,
+        "useRegionID": false,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 66000,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Mine some iron ore near the Ardougne Monastery",
+        "region": "KANDARIN",
+        "completionIDs": [
+            440
+        ],
+        "locations": [
+            {
+                "x": "2605",
+                "y": "3222",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 35,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 33144,
+        "tier": 3,
+        "type": "ENTER",
+        "description": "Enter the Wizard's Guild",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2585",
+                "y": "3088",
+                "plane": "0"
+            },
+            {
+                "x": "2585",
+                "y": "3087",
+                "plane": "0"
+            },
+            {
+                "x": "2596",
+                "y": "3087",
+                "plane": "0"
+            },
+            {
+                "x": "2596",
+                "y": "3088",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "MAGIC"
+    },
+    {
+        "id": 8305,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill Salarin the twisted",
+        "region": "KANDARIN",
+        "completionIDs": [
+            304
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 3636,
+        "tier": 3,
+        "type": "MAGIC",
+        "description": "Cast the Ardougne Teleport spell",
+        "region": "KANDARIN",
+        "completionIDs": [
+            14286886,
+            51
+        ],
+        "locations": [],
+        "gainedXP": 51,
+        "useRegionID": false,
+        "skill": "MAGIC"
+    },
+    {
+        "id": 53580,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Catch a Red salamander",
+        "region": "KANDARIN",
+        "completionIDs": [
+            10147
+        ],
+        "locations": [
+            {
+                "x": "2455",
+                "y": "3229",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 272,
+        "useRegionID": true,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 52859,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip any Castle Wars halo",
+        "region": "KANDARIN",
+        "completionIDs": [
+            12638,
+            12639,
+            12637
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 12739,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Zamorak banner",
+        "region": "KANDARIN",
+        "completionIDs": [
+            4039
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 49038,
+        "tier": 5,
+        "type": "KILL",
+        "description": "Defeat the Thermonuclear Smoke Devil",
+        "region": "KANDARIN",
+        "completionIDs": [
+            499
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 33161,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip an Occult necklace",
+        "region": "KANDARIN",
+        "completionIDs": [
+            12002
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 45111,
+        "tier": 4,
+        "type": "ENTER",
+        "description": "Enter the Myth's Guild",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2458",
+                "y": "2860",
+                "plane": "0"
+            },
+            {
+                "x": "2457",
+                "y": "2860",
+                "plane": "0"
+            },
+            {
+                "x": "2456",
+                "y": "2860",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "HITPOINTS"
+    },
+    {
+        "id": 19936,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Smoke battlestaff",
+        "region": "KANDARIN",
+        "completionIDs": [
+            11998
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 66473,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Dragon scimitar",
+        "region": "KANDARIN",
+        "completionIDs": [
+            4587
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 93295,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Fletch a Maple shortbow in Seer's Village",
+        "region": "KANDARIN",
+        "completionIDs": [
+            853
+        ],
+        "locations": [
+            {
+                "x": "2724",
+                "y": "3485",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 50,
+        "useRegionID": true,
+        "skill": "FLETCHING"
+    },
+    {
+        "id": 20112,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Complete a lap of the Seer's Village Rooftop Course",
+        "region": "KANDARIN",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2724",
+                "y": "3485",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 435,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 49281,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Chop a maple tree in Seer's Village",
+        "region": "KANDARIN",
+        "completionIDs": [
+            1517
+        ],
+        "locations": [
+            {
+                "x": "2724",
+                "y": "3485",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 100,
+        "useRegionID": true,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 86215,
+        "tier": 4,
+        "type": "CREATE",
+        "description": "Catch a raw shark in Catherby",
+        "region": "KANDARIN",
+        "completionIDs": [
+            383
+        ],
+        "locations": [
+            {
+                "x": "2836",
+                "y": "3436",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 110,
+        "useRegionID": true,
+        "skill": "FISHING"
+    },
+    {
+        "id": 75231,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Harvest a cabbage from the allotment patch in Catherby",
+        "region": "KANDARIN",
+        "completionIDs": [
+            1965
+        ],
+        "locations": [
+            {
+                "x": "2836",
+                "y": "3436",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 11.5,
+        "useRegionID": true,
+        "skill": "FARMING"
+    },
+    {
+        "id": 96557,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Shaman mask",
+        "region": "KANDARIN",
+        "completionIDs": [
+            21838
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 20196,
+        "tier": 4,
+        "type": "CREATE",
+        "description": "Mine some runite ore in the Myth's guild",
+        "region": "KANDARIN",
+        "completionIDs": [
+            451
+        ],
+        "locations": [
+            {
+                "x": "1936",
+                "y": "9018",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 125,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 81891,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Catch a Crimson swift",
+        "region": "KANDARIN",
+        "completionIDs": [
+            10088
+        ],
+        "locations": [
+            {
+                "x": "2555",
+                "y": "2908",
+                "plane": "0"
+            },
+            {
+                "x": "2566",
+                "y": "2908",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 34,
+        "useRegionID": true,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 77306,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Catch a Tropical wagtail",
+        "region": "KANDARIN",
+        "completionIDs": [
+            10087
+        ],
+        "locations": [
+            {
+                "x": "2555",
+                "y": "2908",
+                "plane": "0"
+            },
+            {
+                "x": "2566",
+                "y": "2908",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 95.5,
+        "useRegionID": true,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 75602,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Catch a Red chinchompa in Feldip Hills",
+        "region": "KANDARIN",
+        "completionIDs": [
+            9977
+        ],
+        "locations": [
+            {
+                "x": "2555",
+                "y": "2908",
+                "plane": "0"
+            },
+            {
+                "x": "2566",
+                "y": "2908",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 17213,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Chop the teak tree south of Castle Wars",
+        "region": "KANDARIN",
+        "completionIDs": [
+            6333
+        ],
+        "locations": [
+            {
+                "x": "2333",
+                "y": "3047",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 85,
+        "useRegionID": true,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 69795,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip a Dorgeshuun crossbow\r",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            8880
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 15750,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip an Ancient mace",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            11061
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 17814,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any Raiments of the Eye piece",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            26852,
+            26854,
+            26856,
+            26858,
+            26860,
+            26862,
+            26864,
+            26866,
+            26850,
+            26868,
+            26870,
+            26872,
+            26874
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 73789,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip an Abyssal lantern",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            26822
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 58254,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip an Abyssal lantern (Magic logs)",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            26846
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 88040,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Ring of the elements",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            26815
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 57430,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Catalytic tiara",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            26801
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 51560,
+        "tier": 4,
+        "type": "CREATE",
+        "description": "Create a Colossal pouch",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            26784
+        ],
+        "locations": [],
+        "gainedXP": 1000,
+        "useRegionID": false,
+        "skill": "CRAFTING"
+    },
+    {
+        "id": 91311,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip the Champion's cape",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            21439
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 26724,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill the Deranged archaeologist",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            7806
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 72129,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Kill an Ancient Wyvern",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            7795
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 52305,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Kill a Rune Dragon",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            8027,
+            8031,
+            8091
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 18930,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Dragon full helm",
+        "region": "KANDARIN",
+        "completionIDs": [
+            11335
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 31658,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Dragon platebody",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            21892
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 94902,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Dragon crossbow",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            21902
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 5083,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Ring of stone in the Mor Ul Rek gem shop",
+        "region": "KARAMJA",
+        "completionIDs": [
+            6583
+        ],
+        "locations": [
+            {
+                "x": "2521",
+                "y": "5075",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 80931,
+        "tier": 4,
+        "type": "CREATE",
+        "description": "Fish an infernal eel",
+        "region": "KARAMJA",
+        "completionIDs": [
+            21293
+        ],
+        "locations": [],
+        "gainedXP": 95,
+        "useRegionID": false,
+        "skill": "FISHING"
+    },
+    {
+        "id": 12769,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Thieve from the gem stall in the TzHaar city",
+        "region": "KARAMJA",
+        "completionIDs": [
+            1623,
+            1617,
+            1619,
+            1621
+        ],
+        "locations": [
+            {
+                "x": "2463",
+                "y": "5148",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 160,
+        "useRegionID": true,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 22699,
+        "tier": 3,
+        "type": "LOOT",
+        "description": "Obtain a Toktz-ket-xil drop Toktz-ket-xil",
+        "region": "KARAMJA",
+        "completionIDs": [
+            6524
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 34894,
+        "tier": 3,
+        "type": "LOOT",
+        "description": "Obtain an Obsidian cape drop",
+        "region": "KARAMJA",
+        "completionIDs": [
+            6568
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 75284,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Dragon harpoon",
+        "region": "DESERT",
+        "completionIDs": [
+            21028
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 26625,
+        "tier": 3,
+        "type": "LOOT",
+        "description": "Obtain a Tackle box",
+        "region": "DESERT",
+        "completionIDs": [
+            25580
+        ],
+        "locations": [
+            {
+                "x": "3153",
+                "y": "2833",
+                "plane": "0"
+            },
+            {
+                "x": "3153",
+                "y": "2832",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 44007,
+        "tier": 3,
+        "type": "LOOT",
+        "description": "Obtain a Fish barrel",
+        "region": "DESERT",
+        "completionIDs": [
+            25582
+        ],
+        "locations": [
+            {
+                "x": "3153",
+                "y": "2833",
+                "plane": "0"
+            },
+            {
+                "x": "3153",
+                "y": "2832",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 21238,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Big harpoonfish",
+        "region": "DESERT",
+        "completionIDs": [
+            25559
+        ],
+        "locations": [
+            {
+                "x": "3153",
+                "y": "2833",
+                "plane": "0"
+            },
+            {
+                "x": "3153",
+                "y": "2832",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 25865,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Colossal blade",
+        "region": "DESERT",
+        "completionIDs": [
+            27021
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 26328,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any Smith's Uniform outfit piece",
+        "region": "DESERT",
+        "completionIDs": [
+            27023,
+            27025,
+            27027,
+            27029,
+            27031
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 20493,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip a Necklace of Anguish",
+        "region": "KANDARIN",
+        "completionIDs": [
+            19547
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 47862,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Tormented bracelet",
+        "region": "KANDARIN",
+        "completionIDs": [
+            19544
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 85083,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Amulet of Torture",
+        "region": "KANDARIN",
+        "completionIDs": [
+            19553
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 72117,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Heavy ballista",
+        "region": "KANDARIN",
+        "completionIDs": [
+            19481
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 16849,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Defeat Dagannoth Rex",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            2267,
+            6498,
+            6630,
+            6641
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 23433,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Defeat Dagannoth Prime",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            2266,
+            6497,
+            6627,
+            6629
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 86574,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Defeat Dagannoth Supreme",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            2265,
+            6496,
+            6626,
+            6628
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 969,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Berserker ring",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            6737
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 39324,
+        "tier": 3,
+        "type": "LOOT",
+        "description": "Obtain a Dragon axe",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            6739
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 5404,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Warrior ring",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            6735
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 51530,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Seercull",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            6724
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 55220,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain an Archer's Ring",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            6733
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 37888,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Seer's Ring",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            6731
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 1756,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Mud battlestaff",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            6562
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 47038,
+        "tier": 1,
+        "type": "KILL",
+        "description": "Kill a Cave crawler",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            406,
+            407,
+            408,
+            409
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 12973,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Rockslug in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            421,
+            422
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 80581,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Cockatrice in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            121,
+            419,
+            420
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 23830,
+        "tier": 2,
+        "type": "KILL",
+        "description": "Kill a Pyrefiend in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            433,
+            434,
+            435,
+            436,
+            3139
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 76537,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Basilisk in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            122,
+            417,
+            418,
+            9258,
+            9282,
+            9283,
+            9284,
+            9285,
+            9286,
+            9293
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 82815,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Jelly in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            437,
+            438,
+            439,
+            440,
+            441,
+            442,
+            7518,
+            11241,
+            11242,
+            11243,
+            11244,
+            11245
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 17302,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Kill a Kurask in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            123,
+            410,
+            411
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 92706,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Leaf-bladed battleaxe",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            20727
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 88214,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Mystic robe top (light)",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            4111
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 36226,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Basilisk head",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            7977
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 80478,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Cockatrice head",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            7976
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 14579,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip Mystic boots (light) in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            4117
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 33777,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Leaf-bladed sword in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            11902
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 82477,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip Mystic robe bottom (light) in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            4113
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 45721,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Kurask head",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            7978
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 18696,
+        "tier": 2,
+        "type": "LOOT",
+        "description": "Obtain Bronze boots",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            4119
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 521,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip Bronze boots in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            4119
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 76168,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip Iron boots in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            4121
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 38237,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip Steel boots in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            4123
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 42008,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip Mithril boots in the Fremennik Slayer Dungeon",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            4127
+        ],
+        "locations": [
+            {
+                "x": 2771,
+                "y": 10011,
+                "plane": 0
+            },
+            {
+                "x": 2714,
+                "y": 10008,
+                "plane": 0
+            },
+            {
+                "x": 2704,
+                "y": 9962,
+                "plane": 0
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 29370,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip Adamant boots in the Slayer Tower",
+        "region": "MORYTANIA",
+        "completionIDs": [
+            4129
+        ],
+        "locations": [
+            {
+                "x": "3426",
+                "y": "3551",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 55256,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Steal from the Silk stall in Keldagrim",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            950
+        ],
+        "locations": [
+            {
+                "x": "2889",
+                "y": "10199",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 24,
+        "useRegionID": true,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 36493,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Steal from the Spice stall in the Keldagrim",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            2007
+        ],
+        "locations": [
+            {
+                "x": "2889",
+                "y": "10199",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 81,
+        "useRegionID": true,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 95672,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Smith a Steel platebody in Keldagrim",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            1119
+        ],
+        "locations": [
+            {
+                "x": "2889",
+                "y": "10199",
+                "plane": "0"
+            },
+            {
+                "x": "2865",
+                "y": "10201",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 2231,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Mine some tin south of Keldagrim",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            438
+        ],
+        "locations": [
+            {
+                "x": "2860"
+            },
+            {
+                "x": "2860",
+                "y": "10168",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 17.5,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 75164,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Mine some coal in Keldagrim",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            453
+        ],
+        "locations": [
+            {
+                "x": "2889",
+                "y": "10199",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 50,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 39588,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Mine some mithril near Rellekka",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            447
+        ],
+        "locations": [
+            {
+                "x": "2721",
+                "y": "3692",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 80,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 19784,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Mine some silver in Rellekka",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            442
+        ],
+        "locations": [
+            {
+                "x": "2674",
+                "y": "3701",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 40,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 17378,
+        "tier": 4,
+        "type": "CREATE",
+        "description": "Complete a lap of the Rellekka Rooftop Course",
+        "region": "FREMENNIK",
+        "completionIDs": [],
+        "locations": [
+            {
+                "x": "2674",
+                "y": "3701",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 475,
+        "useRegionID": true,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 54802,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip the Helm of neitiznot",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            10828
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 12284,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip an Archer helm",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            3749
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 95767,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip a Berserker helm",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            3751
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 3519,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip a Warrior helm",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            3753
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 60764,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip a Farseer helm",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            3755
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 44967,
+        "tier": 2,
+        "type": "EQUIP",
+        "description": "Equip any Rock-shell armor piece",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            6128,
+            6129,
+            6130,
+            6145,
+            6151
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 96697,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any Spined armor piece",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            6131,
+            6133,
+            6135,
+            6143,
+            6149
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 87715,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip any Skeletal armor piece",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            6137,
+            6139,
+            6141,
+            6147,
+            6153
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 62272,
+        "tier": 4,
+        "type": "KILL",
+        "description": "Defeat Vorkath after Dragon Slayer II",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            8061
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 57458,
+        "tier": 4,
+        "type": "CREATE",
+        "description": "Mine some runite ore north of Neitiznot",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            451,
+            451
+        ],
+        "locations": [
+            {
+                "x": "2374",
+                "y": "3851",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 125,
+        "useRegionID": true,
+        "skill": "MINING"
+    },
+    {
+        "id": 56298,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill an Ice troll",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            648,
+            649,
+            650,
+            651,
+            652,
+            653,
+            654,
+            698,
+            699,
+            700,
+            701,
+            702,
+            703,
+            704,
+            705,
+            1874,
+            1875,
+            1876,
+            1877,
+            5822,
+            5823,
+            5824,
+            5825,
+            5826,
+            5828,
+            5829,
+            5830,
+            5831,
+            6356
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 68512,
+        "tier": 2,
+        "type": "CREATE",
+        "description": "Smelt a steel bar in Rellekka",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            2353
+        ],
+        "locations": [
+            {
+                "x": "2616",
+                "y": "3662",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 17.5,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 1768,
+        "tier": 3,
+        "type": "CREATE",
+        "description": "Smith a mithril dagger in Rellekka",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            1209
+        ],
+        "locations": [
+            {
+                "x": "2616",
+                "y": "3662",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 50,
+        "useRegionID": true,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 94505,
+        "tier": 4,
+        "type": "LOOT",
+        "description": "Obtain a Basilisk jaw",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            24268
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 33541,
+        "tier": 5,
+        "type": "CREATE",
+        "description": "Cast the Spellbook Swap spell",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            14286989
+        ],
+        "locations": [],
+        "gainedXP": 96,
+        "useRegionID": false,
+        "skill": "MAGIC"
+    },
+    {
+        "id": 79148,
+        "tier": 5,
+        "type": "CREATE",
+        "description": "Bake a Summer pie at a range on Lunar Isle",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            7218
+        ],
+        "locations": [
+            {
+                "x": "2091",
+                "y": "3912",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 260,
+        "useRegionID": true,
+        "skill": "COOKING"
+    },
+    {
+        "id": 86556,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Moss giant on the Pirate's Cove",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            2090,
+            2091,
+            2092,
+            2093,
+            3851,
+            3852,
+            7262,
+            8736
+        ],
+        "locations": [
+            {
+                "x": "2203",
+                "y": "3810",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": -1,
+        "useRegionID": true,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 68937,
+        "tier": 3,
+        "type": "KILL",
+        "description": "Kill a Suqah",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            787,
+            788,
+            789,
+            790,
+            791,
+            792,
+            793
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 22071,
+        "tier": 4,
+        "type": "EQUIP",
+        "description": "Equip Ava's Assembler",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            22109
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 21348,
+        "tier": 5,
+        "type": "LOOT",
+        "description": "Obtain a Skeletal visage",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            22006
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 92581,
+        "tier": 5,
+        "type": "EQUIP",
+        "description": "Equip a Dragonbone necklace",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            22111
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 47979,
+        "tier": 1,
+        "type": "CREATE",
+        "description": "Catch a Cerulean twitch",
+        "region": "FREMENNIK",
+        "completionIDs": [
+            10089
+        ],
+        "locations": [
+            {
+                "x": "2707",
+                "y": "3781",
+                "plane": "0"
+            },
+            {
+                "x": "2713",
+                "y": "3771",
+                "plane": "0"
+            }
+        ],
+        "gainedXP": 64.5,
+        "useRegionID": true,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 45975,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Rune platebody",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            1127
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 58576,
+        "tier": 3,
+        "type": "EQUIP",
+        "description": "Equip a Green d'hide body",
+        "region": "MISTHALIN",
+        "completionIDs": [
+            1135
+        ],
+        "locations": [],
+        "gainedXP": -1,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 44000,
+        "tier": 1,
+        "type": "LEVEL",
+        "description": "Reach level 5 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 5,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 76516,
+        "tier": 1,
+        "type": "LEVEL",
+        "description": "Reach level 10 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 10,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 47313,
+        "tier": 2,
+        "type": "LEVEL",
+        "description": "Reach level 20 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 20,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 79559,
+        "tier": 2,
+        "type": "LEVEL",
+        "description": "Reach level 30 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 30,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 24283,
+        "tier": 2,
+        "type": "LEVEL",
+        "description": "Reach level 40 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 40,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 25199,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 61144,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 60 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 60,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 61142,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 70 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 70,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 61141,
+        "tier": 4,
+        "type": "LEVEL",
+        "description": "Reach level 80 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 80,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 61140,
+        "tier": 4,
+        "type": "LEVEL",
+        "description": "Reach level 90 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 90,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 61145,
+        "tier": 4,
+        "type": "LEVEL",
+        "description": "Reach level 95 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 95,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 61144,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 in a skill",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "OVERALL"
+    },
+    {
+        "id": 67829,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Attack",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 42104,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Strength",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "STRENGTH"
+    },
+    {
+        "id": 75622,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Defence",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "DEFENCE"
+    },
+    {
+        "id": 94311,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Hitpoints",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "HITPOINTS"
+    },
+    {
+        "id": 95299,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Ranged",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "RANGED"
+    },
+    {
+        "id": 22965,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Magic",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "MAGIC"
+    },
+    {
+        "id": 69356,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Crafting",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "CRAFTING"
+    },
+    {
+        "id": 83025,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Fletching",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "FLETCHING"
+    },
+    {
+        "id": 73713,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Fishing",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "FISHING"
+    },
+    {
+        "id": 80521,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Firemaking",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "FIREMAKING"
+    },
+    {
+        "id": 83926,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Woodcutting",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 94961,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Herblore",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "HERBLORE"
+    },
+    {
+        "id": 2796,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Slayer",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "SLAYER"
+    },
+    {
+        "id": 63644,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Thieving",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 82665,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Smithing",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 84403,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Mining",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "MINING"
+    },
+    {
+        "id": 56105,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Hunter",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 7533,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Prayer",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "PRAYER"
+    },
+    {
+        "id": 57121,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Construction",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "CONSTRUCTION"
+    },
+    {
+        "id": 48970,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Cooking",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "COOKING"
+    },
+    {
+        "id": 14577,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Runecraft",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "RUNECRAFT"
+    },
+    {
+        "id": 17761,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Farming",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "FARMING"
+    },
+    {
+        "id": 36760,
+        "tier": 3,
+        "type": "LEVEL",
+        "description": "Reach level 50 Agility",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 50,
+        "useRegionID": false,
+        "skill": "AGILITY"
+    },
+    {
+        "id": 87138,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Attack",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "ATTACK"
+    },
+    {
+        "id": 2410,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Strength",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "STRENGTH"
+    },
+    {
+        "id": 88918,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Defence",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "DEFENCE"
+    },
+    {
+        "id": 85328,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Hitpoints",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "HITPOINTS"
+    },
+    {
+        "id": 71294,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Ranged",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "RANGED"
+    },
+    {
+        "id": 88735,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Magic",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "MAGIC"
+    },
+    {
+        "id": 11312,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Crafting",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "CRAFTING"
+    },
+    {
+        "id": 21018,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Fletching",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "FLETCHING"
+    },
+    {
+        "id": 95894,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Fishing",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "FISHING"
+    },
+    {
+        "id": 12725,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Firemaking",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "FIREMAKING"
+    },
+    {
+        "id": 36765,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Woodcutting",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "WOODCUTTING"
+    },
+    {
+        "id": 20407,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Herblore",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "HERBLORE"
+    },
+    {
+        "id": 71191,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Slayer",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "SLAYER"
+    },
+    {
+        "id": 84954,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Thieving",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "THIEVING"
+    },
+    {
+        "id": 94251,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Smithing",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "SMITHING"
+    },
+    {
+        "id": 87626,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Mining",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "MINING"
+    },
+    {
+        "id": 59936,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Hunter",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "HUNTER"
+    },
+    {
+        "id": 43772,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Prayer",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "PRAYER"
+    },
+    {
+        "id": 74633,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Construction",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "CONSTRUCTION"
+    },
+    {
+        "id": 33144,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Cooking",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "COOKING"
+    },
+    {
+        "id": 89051,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Runecraft",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "RUNECRAFT"
+    },
+    {
+        "id": 7222,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Farming",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "FARMING"
+    },
+    {
+        "id": 48273,
+        "tier": 5,
+        "type": "LEVEL",
+        "description": "Reach level 99 Agility",
+        "region": "ALL",
+        "completionIDs": [],
+        "locations": [],
+        "gainedXP": 99,
+        "useRegionID": false,
+        "skill": "AGILITY"
+    }
+]

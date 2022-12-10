@@ -1,0 +1,158 @@
+[
+  {
+    "id":0,
+    "name":"Misthalin",
+    "icon":{
+      "x":262,
+      "y":118,
+      "spriteStandard":-19100,
+      "spriteHover":-19101
+    },
+    "cost": 500,
+    "indexSprite":2722,
+    "mapSprite":-19000
+  },
+  {
+    "id":1,
+    "name":"Karamja",
+    "icon":{
+      "x":195,
+      "y":188,
+      "spriteStandard":-19102,
+      "spriteHover":-19103
+    },
+    "cost": 500,
+    "indexSprite":2723,
+    "mapSprite":-19001
+  },
+  {
+    "id":2,
+    "name":"Asgarnia",
+    "icon":{
+      "x":215,
+      "y":83,
+      "spriteStandard":-19104,
+      "spriteHover":-19105
+    },
+    "cost": 500,
+    "indexSprite":2725,
+    "mapSprite":-19002
+  },
+  {
+    "id":3,
+    "name":"Desert",
+    "icon":{
+      "x":287,
+      "y":195,
+      "spriteStandard":-19106,
+      "spriteHover":-19107
+    },
+    "cost": 500,
+    "indexSprite":2727,
+    "mapSprite":-18003
+  },
+  {
+    "id":4,
+    "name":"Morytania",
+    "icon":{
+      "x":335,
+      "y":107,
+      "spriteStandard":-19108,
+      "spriteHover":-19109
+    },
+    "cost": 500,
+    "indexSprite":2730,
+    "mapSprite":-19004
+  },
+  {
+    "id":5,
+    "name":"Wilderness",
+    "icon":{
+      "x":265,
+      "y":33,
+      "spriteStandard":-19110,
+      "spriteHover":-19111
+    },
+    "cost": 500,
+    "indexSprite":2724,
+    "mapSprite":-19005
+  },
+  {
+    "id":6,
+    "name":"Kandarin",
+    "icon":{
+      "x":132,
+      "y":130,
+      "spriteStandard":-19112,
+      "spriteHover":-19113
+    },
+    "cost": 500,
+    "indexSprite":2726,
+    "mapSprite":-19006
+  },
+  {
+    "id":7,
+    "name":"Fremennik",
+    "icon":{
+      "x":162,
+      "y":50,
+      "spriteStandard":-19114,
+      "spriteHover":-19115
+    },
+    "cost": 500,
+    "indexSprite":2728,
+    "mapSprite":-19007
+  },
+  {
+    "id":8,
+    "name":"Tirannwn",
+    "icon":{
+      "x":75,
+      "y":150,
+      "spriteStandard":-19116,
+      "spriteHover":-19117
+    },
+    "cost": 500,
+    "indexSprite":2729,
+    "mapSprite":-19008
+  },
+  {
+    "id":9,
+    "name":"Upper Zeah",
+    "icon":{
+      "x":0,
+      "y":80,
+      "spriteStandard":-19123,
+      "spriteHover":-19124
+    },
+    "cost": 500,
+    "indexSprite":-1,
+    "mapSprite":-19009
+  },
+  {
+    "id":10,
+    "name":"Lower Zeah",
+    "icon":{
+      "x":0,
+      "y":130,
+      "spriteStandard":-19121,
+      "spriteHover":-19122
+    },
+    "cost": 500,
+    "indexSprite":-1,
+    "mapSprite":-19009
+  },
+  {
+    "id":11,
+    "name":"Kebos",
+    "icon":{
+      "x":0,
+      "y":180,
+      "spriteStandard":-19125,
+      "spriteHover":-19126
+    },
+    "cost": 500,
+    "indexSprite":-1,
+    "mapSprite":-19009
+  }
+]
