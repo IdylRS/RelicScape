@@ -84,6 +84,24 @@ public interface RelicScapeConfig extends Config
 	)
 	default int relicSoundID() { return 4212; }
 
+	@ConfigItem(
+			keyName = "maxSkillUnlocks",
+			name = "Max Skill Unlocks",
+			description = "The maximum skills that can be unlocked at once",
+			position = 5,
+			section = generalSettings
+	)
+	default int maxSkillUnlocks() { return 10; }
+
+	@ConfigItem(
+			keyName = "maxRegionUnlocks",
+			name = "Max Region Unlocks",
+			description = "The maximum regions that can be unlocked at once",
+			position = 6,
+			section = generalSettings
+	)
+	default int maxRegionUnlocks() { return 3; }
+
 	// Environment Looks
 
 	@ConfigItem(

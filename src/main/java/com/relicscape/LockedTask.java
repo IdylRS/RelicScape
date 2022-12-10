@@ -19,7 +19,9 @@ public class LockedTask {
     private static final List<Skill> creationSkills = Arrays.asList(
             Skill.COOKING, Skill.SMITHING, Skill.FLETCHING,
             Skill.FISHING, Skill.THIEVING, Skill.RUNECRAFT,
-            Skill.WOODCUTTING, Skill.MINING, Skill.HUNTER
+            Skill.WOODCUTTING, Skill.MINING, Skill.HUNTER,
+            Skill.HERBLORE, Skill.FARMING, Skill.FIREMAKING,
+            Skill.CONSTRUCTION
     );
 
     private static final List<Integer> specialItemContainers = Arrays.asList(
@@ -67,29 +69,6 @@ public class LockedTask {
         this.completionIDs = completionIDs;
         this.gainedXP = gainedXP;
         this.useRegionID = useRegionID;
-        this.skill = skill;
-    }
-
-    public LockedTask(
-            String id,
-            int tier,
-            TaskType type,
-            String description,
-            TrailblazerRegion region,
-            List<Integer> completionIDs,
-            List<WorldPoint> locations,
-            double gainedXP,
-            Skill skill
-    ) {
-        this.id = id;
-        this.tier = tier;
-        this.type = type;
-        this.description = description;
-        this.region = region;
-        this.locations = locations;
-        this.completionIDs = completionIDs;
-        this.gainedXP = gainedXP;
-        this.useRegionID = false;
         this.skill = skill;
     }
 
@@ -242,7 +221,7 @@ public class LockedTask {
         double xpDifference = Math.abs(xpGained - xpTarget);
         if(xpDifference <= 0.5 || xpTarget < 0) {
             boolean hasItem = itemID <= 0 || req.fulfilledBy(inventory.getItems());
-
+            log.info("item valid for task "+ task.getDescription());
             if(locations == null) return hasItem;
             else return playerAtLocation(playerLoc, locations, task.useRegionID) && hasItem;
         }
@@ -299,6 +278,8 @@ public class LockedTask {
     }
 
     public static List<LockedTask> checkForLevelCompletion(Skill skill, int skillLevel, List<String> completedTasks) {
+        if(skill == Skill.HITPOINTS && skillLevel <= 10) return Arrays.asList();
+
         return levelTaskList.stream().filter(t -> {
            if(completedTasks.contains(t.getId())) return false;
            if(t.skill == Skill.OVERALL || skill == t.getSkill()) {

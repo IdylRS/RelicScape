@@ -114,8 +114,6 @@ public class RelicScapePlugin extends Plugin {
 	private static final int SOUND_EFFECT_FAIL = 2277;
 
 	private final int BASE_RELIC_CHANCE = 1000;
-	private final int MAX_SKILLS = 10;
-	private final int MAX_REGIONS = 3;
 	private final Skill[] BLACKLIST = {Skill.SLAYER, Skill.ATTACK, Skill.STRENGTH, Skill.HITPOINTS, Skill.MAGIC, Skill.RANGED, Skill.DEFENCE};
 
 	@Inject
@@ -218,7 +216,7 @@ public class RelicScapePlugin extends Plugin {
 		pluginPanel = new RelicScapePluginPanel(this, this.clientThread, spriteManager);
 		final BufferedImage icon = ImageUtil.loadImageResource(getClass(), "panel_icon.png");
 		NavigationButton navButton = NavigationButton.builder()
-				.tooltip("RS Locked")
+				.tooltip("RelicScape")
 				.priority(5)
 				.icon(icon)
 				.panel(pluginPanel)
@@ -352,8 +350,8 @@ public class RelicScapePlugin extends Plugin {
 			sendFailMessage("You need "+skill.getUnlockCost()+" points to unlock "+skill.getName()+".");
 			return;
 		}
-		else if(unlockData.getSkills().size() >= MAX_SKILLS) {
-			sendFailMessage("You have used all "+MAX_SKILLS+" of your skill unlocks. You can re-lock a skill by right clicking it.");
+		else if(unlockData.getSkills().size() >= config.maxSkillUnlocks()) {
+			sendFailMessage("You have used all "+config.maxSkillUnlocks()+" of your skill unlocks. You can re-lock a skill by right clicking it.");
 			return;
 		}
 
@@ -382,23 +380,23 @@ public class RelicScapePlugin extends Plugin {
 			sendFailMessage("You need "+area.getUnlockCost()+" points to unlock "+area.getName()+".");
 			return false;
 		}
-		else if(regionSlots >= MAX_REGIONS) {
-			sendFailMessage("You have unlocked "+unlockData.getAreas().size()+"/"+MAX_REGIONS+" regions. You must re-lock a region before unlocking a new one.");
+		else if(regionSlots >= config.maxRegionUnlocks()) {
+			sendFailMessage("You have unlocked "+unlockData.getAreas().size()+"/"+config.maxRegionUnlocks()+" regions. You must re-lock a region before unlocking a new one.");
 			return false;
 		}
 
 		unlockData.addArea(area);
+		savePlayerData();
 		subtractPoints(area.getUnlockCost());
 
 		client.addChatMessage(
 				ChatMessageType.GAMEMESSAGE,
 				"",
-				"You unlocked the "+area.getName()+" region! You have used "+regionSlots+"/"+MAX_REGIONS+" region unlocks.",
+				"You unlocked the "+area.getName()+" region! You have used "+regionSlots+"/"+config.maxRegionUnlocks()+" region unlocks.",
 				null
 		);
 
 		this.regionDefinitions[area.regionID].setUnlocked(true);
-		savePlayerData();
 		this.client.playSoundEffect(SOUND_EFFECT_TWINKLE);
 
 		return true;
@@ -414,7 +412,7 @@ public class RelicScapePlugin extends Plugin {
 		client.addChatMessage(
 				ChatMessageType.GAMEMESSAGE,
 				"",
-				"You locked the "+skill.getName()+" skill. You have used "+skillSlots+"/"+MAX_SKILLS+" skill unlocks.",
+				"You locked the "+skill.getName()+" skill. You have used "+skillSlots+"/"+config.maxSkillUnlocks()+" skill unlocks.",
 				null
 		);
 
@@ -435,7 +433,7 @@ public class RelicScapePlugin extends Plugin {
 		client.addChatMessage(
 				ChatMessageType.GAMEMESSAGE,
 				"",
-				"You locked the "+region.getName()+" region. You have used "+regionSlots+"/"+MAX_REGIONS+" region unlocks.",
+				"You locked the "+region.getName()+" region. You have used "+regionSlots+"/"+config.maxRegionUnlocks()+" region unlocks.",
 				null
 		);
 	}
@@ -619,7 +617,7 @@ public class RelicScapePlugin extends Plugin {
 			if(pointsInfoBox == null) {
 				BufferedImage icon = itemManager.getImage(999);
 				pointsInfoBox = new PointsInfoBox(this, icon);
-				pointsInfoBox.setTooltip("RS Locked Points");
+				pointsInfoBox.setTooltip("RelicScape Points");
 				infoBoxManager.addInfoBox(pointsInfoBox);
 			}
 		}
@@ -657,12 +655,17 @@ public class RelicScapePlugin extends Plugin {
 		if(skillXP.get(skill) < 0) {
 			skillXP.put(skill, newXp);
 			skillLevels.put(skill, client.getRealSkillLevel(skill));
-			List<LockedTask> completedTasks = LockedTask.checkForLevelCompletion(skill, skillLevel, unlockData.getTasks());
-			completedTasks.forEach(this::completeTask);
+
+			if(skill != Skill.OVERALL) {
+				List<LockedTask> completedTasks = LockedTask.checkForLevelCompletion(skill, skillLevel, unlockData.getTasks());
+				completedTasks.forEach(this::completeTask);
+			}
+
 			return;
 		}
 
 		int xpGained = newXp - skillXP.get(skill);
+		int levelsGained = skillLevel - skillLevels.get(skill);
 		skillXP.put(skill, newXp);
 		skillLevels.put(event.getSkill(), skillLevel);
 
@@ -681,7 +684,8 @@ public class RelicScapePlugin extends Plugin {
 
 		updateSkill(skill, xpGained);
 		List<LockedTask> completedTasks = LockedTask.checkForCreateCompletion(client, skill, xpGained, unlockData.getTasks());
-		if(client.getRealSkillLevel(skill) > skillLevels.get(skill) && skill != Skill.OVERALL) {
+		if(levelsGained > 0 && skill != Skill.OVERALL) {
+			log.info("Levelled up in "+skill.getName());
 			completedTasks.addAll(LockedTask.checkForLevelCompletion(skill, skillLevel, unlockData.getTasks()));
 		}
 		completedTasks.forEach(this::completeTask);
@@ -767,11 +771,7 @@ public class RelicScapePlugin extends Plugin {
 		}
 		else {
 			List<Item> newItems = Arrays.asList(e.getItemContainer().getItems());
-
 			List<Item> changedItems = newItems.stream().filter(i -> !lastInventoryState.contains(i)).collect(Collectors.toList());;
-
-			log.info(lastInventoryState.toString());
-			log.info(newItems.toString());
 
 			tasks = LockedTask.checkForNonNpcLoot(
 					e.getItemContainer(),
@@ -813,12 +813,15 @@ public class RelicScapePlugin extends Plugin {
 		rollForRelic(xpGained, skill);
 	}
 
-	private void rollForRelic(int xpGained, Skill skill) {
+	private void rollForRelic(double xpGained, Skill skill) {
 		// Don't grant relics for combat skills
 		if(Arrays.asList(BLACKLIST).contains(skill)) return;
+		double maxXp = 2500;
+		double maxChance = 33;
+		double chance = Math.min(xpGained, maxXp) / maxXp * maxChance;
+		double roll = Math.random()*100;
 
-		int chance = (int) Math.round((Math.log(xpGained))* 10);
-		int roll = (int) Math.floor(Math.random()*BASE_RELIC_CHANCE);
+		log.info(chance + "% chance of relic... roll was "+roll);
 
 		if(roll < chance) {
 			this.awardRelic(new Relic(1), false, true);
@@ -836,9 +839,11 @@ public class RelicScapePlugin extends Plugin {
 	}
 
 	private void rollForRelicDrop(NPC npc, LocalPoint point) {
-		int combatLevel = npc.getCombatLevel();
-		int chance = (int) Math.round(2*Math.log(combatLevel)*10);
-		int roll = (int) Math.floor(Math.random()*1000);
+		double combatLevel = npc.getCombatLevel();
+		double chance = 2*Math.log(combatLevel);
+		double roll = Math.random()*100;
+
+		log.info(chance+"% chance of a relic drop... roll was "+roll);
 
 		if(roll < chance) {
 			int tier = rollRelicTier(combatLevel);
@@ -1085,7 +1090,7 @@ public class RelicScapePlugin extends Plugin {
 		this.indexPage.setVisibility(true);
 		this.confirmPage.setVisibility(false);
 
-		this.regionCount.setText("Regions unlocked: "+unlockData.getAreas().size()+"/"+MAX_REGIONS);
+		this.regionCount.setText("Regions unlocked: "+unlockData.getAreas().size()+"/"+config.maxRegionUnlocks());
 	}
 
 	private void displayConfirmationPage(int regionID) {
