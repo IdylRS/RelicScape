@@ -656,10 +656,8 @@ public class RelicScapePlugin extends Plugin {
 			skillXP.put(skill, newXp);
 			skillLevels.put(skill, client.getRealSkillLevel(skill));
 
-			if(skill != Skill.OVERALL) {
-				List<LockedTask> completedTasks = LockedTask.checkForLevelCompletion(skill, skillLevel, unlockData.getTasks());
-				completedTasks.forEach(this::completeTask);
-			}
+			List<LockedTask> completedTasks = LockedTask.checkForLevelCompletion(skill, skillLevel, unlockData.getTasks());
+			completedTasks.forEach(this::completeTask);
 
 			return;
 		}
@@ -786,6 +784,16 @@ public class RelicScapePlugin extends Plugin {
 		tasks.forEach(this::completeTask);
 
 		if(e.getContainerId() == InventoryID.INVENTORY.getId()) lastInventoryState = Arrays.asList(e.getItemContainer().getItems());
+	}
+
+	@Subscribe
+	public void onVarbitChanged(VarbitChanged event) {
+		if(client.getGameState().equals(GameState.LOGGED_IN)) {
+			clientThread.invokeLater(() -> {
+				List<LockedTask> tasks = LockedTask.checkForQuestCompletion(client, unlockData.getTasks());
+				tasks.forEach(this::completeTask);
+			});
+		}
 	}
 
 	private void completeTask(LockedTask task) {

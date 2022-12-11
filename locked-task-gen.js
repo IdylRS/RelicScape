@@ -1,5 +1,5 @@
 const fs = require('fs');
-const prompt = require('prompt-sync')({sigint: true});
+const prompt = require('prompt-sync')({ sigint: true });
 
 const fileLocation = `./src/main/resources/com/relicscape/tasks.json`;
 
@@ -51,107 +51,125 @@ const strongholdSlayerCave = [
 ]
 
 data.type = getType(prompt('What type of task? [en, eq, c, k, l, m]'));
-
 data.tier = +prompt('What tier is the task?');
+console.log(data.type)
+if (data.type == 'QUEST') fillQuestData();
+else fillData();
 
-if(data.type == "LOOT" || data.type == 'EQUIP' || data.type === 'CREATE') {
-    itemName = prompt('What is the item to be obtained?');
-    itemKey = itemName
-        .toUpperCase()
-        .replaceAll(" ", "_")
-        .replaceAll("-","")
-        .replaceAll("(","")
-        .replaceAll(")","")
-        .replaceAll("'", "")
-        .trim();
-    let itemID = itemIDs[itemKey];
+function fillData() {
+    if (data.type == "LOOT" || data.type == 'EQUIP' || data.type === 'CREATE') {
+        itemName = prompt('What is the item to be obtained?');
+        itemKey = itemName
+            .toUpperCase()
+            .replaceAll(" ", "_")
+            .replaceAll("-", "")
+            .replaceAll("(", "")
+            .replaceAll(")", "")
+            .replaceAll("'", "")
+            .trim();
+        let itemID = itemIDs[itemKey];
 
-    console.log(itemKey)
+        console.log(itemKey)
 
-    if(itemID) {
-        data.completionIDs.push(itemID);
-        console.log(`Found item id for ${itemName}: ${itemID}`)
-    }
-    else {
-        console.log('Could not find item id, please enter manually later.');
-    }
-}
-
-if(data.type == "KILL") {
-    npcName = prompt('What is the npc to be killed?');
-    console.log(npcName)
-    npcKey = npcName
-        .toUpperCase()
-        .replaceAll(" ", "_")
-        .replaceAll("'", "")
-        .trim();
-    let ids = Object.keys(npcIDs).map(npc => {
-        if(npc.startsWith(npcKey)) {
-            if(npc.includes("HARD")) return -1;
-            console.log(`Found ${npc}`)
-            return npcIDs[npc];
+        if (itemID) {
+            data.completionIDs.push(itemID);
+            console.log(`Found item id for ${itemName}: ${itemID}`)
         }
-        return -1
-    }).filter(id => id > 0);
+        else {
+            console.log('Could not find item id, please enter manually later.');
+        }
+    }
 
-    if (ids.length > 0) {
-        data.completionIDs.push(...ids);
-        console.log(`Found npc ids for ${npcName}: ${ids}`)
+    if (data.type == "KILL") {
+        npcName = prompt('What is the npc to be killed?');
+        console.log(npcName)
+        npcKey = npcName
+            .toUpperCase()
+            .replaceAll(" ", "_")
+            .replaceAll("'", "")
+            .trim();
+        let ids = Object.keys(npcIDs).map(npc => {
+            if (npc.startsWith(npcKey)) {
+                if (npc.includes("HARD")) return -1;
+                console.log(`Found ${npc}`)
+                return npcIDs[npc];
+            }
+            return -1
+        }).filter(id => id > 0);
+
+        if (ids.length > 0) {
+            data.completionIDs.push(...ids);
+            console.log(`Found npc ids for ${npcName}: ${ids}`)
+        }
+        else {
+            console.log('Could not find npc id, please enter manually later.');
+        }
+    }
+
+    if ((data.type === 'KILL' && npcName) || (data.type == 'EQUIP' && itemName)) {
+        prefix = prompt('What is the description prefix: ');
+        suffix = prompt('What is the description suffix: ');
     }
     else {
-        console.log('Could not find npc id, please enter manually later.');
+        data.description = data.type == 'LOOT' && itemName ? prompt('What is the description prefix: ') : prompt('Describe the task:');
+    }
+
+
+    if (data.type == 'LOOT' && itemName) {
+        data.description += ` ${itemName}`
+    }
+
+    if ((data.type === 'KILL' && npcName) || (data.type == 'EQUIP' && itemName)) {
+        data.description = `${prefix} ${npcName || itemName}${suffix ? ` ${suffix}` : ''}`
+    }
+
+    while (askRegion) {
+        data.region = getRegion(prompt('What region does this task take place in?'));
+        if (data.region) {
+            data.region = data.region.toUpperCase();
+            askRegion = false;
+        }
+    }
+
+    while (askLoc) {
+        askLoc = addLocation(prompt('What is the x y plane?'));
+    }
+
+    data.useRegionID = prompt('Use only the location Region ID?') ? true : false;
+
+    while (askCompID) {
+        askCompID = addCompID(prompt('What is the completion ID for this task?'));
+    }
+
+    data.gainedXP = +prompt("What is the xp target of this task?") || -1;
+
+    data.skill = getSkill(prompt("What skill? "));
+}
+
+function fillQuestData() {
+    let questName = prompt('What is the quest name? ');
+    data.quest = questName.toUpperCase().replaceAll(' ', '_').replaceAll("'", "").replaceAll('!', '').replaceAll('-', ' ').trim();
+    data.description = `Complete ${questName.startsWith("The") ? '' : 'the '}${questName}${questName.endsWith("Quest") ? '' : ' quest'}`
+
+    while (askRegion) {
+        data.region = getRegion(prompt('What region does this task take place in?'));
+        if (data.region) {
+            data.region = data.region.toUpperCase();
+            askRegion = false;
+        }
     }
 }
 
-if ((data.type === 'KILL' && npcName) || (data.type == 'EQUIP' && itemName)) {
-    prefix = prompt('What is the description prefix: ');
-    suffix = prompt('What is the description suffix: ');
-}
-else {
-    data.description = data.type == 'LOOT' && itemName ? prompt('What is the description prefix: ') : prompt('Describe the task:');
-}
-
-
-if (data.type == 'LOOT' && itemName) {
-    data.description += ` ${itemName}`
-}
-
-if ((data.type === 'KILL' && npcName) || (data.type == 'EQUIP' && itemName)) {
-    data.description = `${prefix} ${npcName || itemName}${suffix ? ` ${suffix}` : ''}`
-}
-
-while(askRegion) {
-    data.region = getRegion(prompt('What region does this task take place in?'));
-    if(data.region) {
-        data.region = data.region.toUpperCase();
-        askRegion = false;
-    }
-}
-
-while(askLoc) {
-    askLoc = addLocation(prompt('What is the x y plane?'));
-}
-
-data.useRegionID = prompt('Use only the location Region ID?') ? true : false;
-
-while (askCompID) {
-    askCompID= addCompID(prompt('What is the completion ID for this task?'));
-}
-
-data.gainedXP = +prompt("What is the xp target of this task?") || -1;
-
-data.skill = getSkill(prompt("What skill"));
-
-data.id = Math.floor(Math.random()*99999)
+data.id = Math.floor(Math.random() * 99999)
 
 newData.push(data);
 
-fs.writeFileSync(fileLocation, JSON.stringify(newData)); 
+fs.writeFileSync(fileLocation, JSON.stringify(newData));
 
 function addLocation(coords) {
-    if(!coords) return false;
+    if (!coords) return false;
 
-    if(coords === 'ssc') {
+    if (coords === 'ssc') {
         data.locations.push(...strongholdSlayerCave)
         return true;
     }
@@ -163,14 +181,14 @@ function addLocation(coords) {
 }
 
 function addCompID(id) {
-    if(!id) return false;
+    if (!id) return false;
 
     data.completionIDs.push(+id);
     return true;
 }
 
 function getType(type) {
-    switch(type) {
+    switch (type) {
         case 'en':
             return 'ENTER';
         case 'eq':
@@ -182,7 +200,9 @@ function getType(type) {
         case 'l':
             return 'LOOT';
         case 'm':
-            return 'MAGIC'
+            return 'MAGIC';
+        case 'q':
+            return 'QUEST';
         case 'lvl':
             return 'LEVEL';
         default:
@@ -191,7 +211,7 @@ function getType(type) {
 }
 
 function getRegion(region) {
-    switch(region) {
+    switch (region) {
         case 'asg':
             return 'Asgarnia';
         case 'mis':

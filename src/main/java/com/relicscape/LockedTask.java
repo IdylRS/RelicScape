@@ -8,6 +8,7 @@ import net.runelite.client.game.ItemStack;
 import net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirement;
 import net.runelite.client.plugins.cluescrolls.clues.item.SingleItemRequirement;
 
+import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -36,6 +37,7 @@ public class LockedTask {
     public static List<LockedTask> creationTaskList = new ArrayList<>();
     public static List<LockedTask> magicTaskList = new ArrayList<>();
     public static List<LockedTask> levelTaskList = new ArrayList<>();
+    public static List<LockedTask> questTaskList = new ArrayList<>();
 
     private String id;
     private int tier;
@@ -45,6 +47,7 @@ public class LockedTask {
     private List<Integer> completionIDs;
     private List<WorldPoint> locations;
     private Skill skill;
+    private Quest quest;
     private double gainedXP;
     private boolean useRegionID;
 
@@ -58,7 +61,9 @@ public class LockedTask {
             List<WorldPoint> locations,
             double gainedXP,
             Skill skill,
-            boolean useRegionID
+            boolean useRegionID,
+            Quest quest
+
     ) {
         this.id = id;
         this.tier = tier;
@@ -70,6 +75,7 @@ public class LockedTask {
         this.gainedXP = gainedXP;
         this.useRegionID = useRegionID;
         this.skill = skill;
+        this.quest = quest;
     }
 
     public static void createTasks(LockedTask[] tasks) {
@@ -95,6 +101,10 @@ public class LockedTask {
                     break;
                 case LEVEL:
                     levelTaskList.add(task);
+                    break;
+                case QUEST:
+                    questTaskList.add(task);
+                    log.info("Creating quest task "+task.getDescription());
                 default:
                     break;
             }
@@ -111,6 +121,7 @@ public class LockedTask {
         taskList.addAll(equipTaskList);
         taskList.addAll(magicTaskList);
         taskList.addAll(levelTaskList);
+        taskList.addAll(questTaskList);
 
         return taskList;
     }
@@ -131,6 +142,8 @@ public class LockedTask {
                 return magicTaskList;
             case LEVEL:
                 return levelTaskList;
+            case QUEST:
+                return questTaskList;
             default:
                 return null;
         }
@@ -292,6 +305,14 @@ public class LockedTask {
            }
 
            return false;
+        }).collect(Collectors.toList());
+    }
+
+    public static List<LockedTask> checkForQuestCompletion(Client client, List<String> completedTasks) {
+        return questTaskList.stream().filter(t -> {
+            if(completedTasks.contains(t.getId()) || t.getQuest() == null) return false;
+
+            return t.getQuest().getState(client) == QuestState.FINISHED;
         }).collect(Collectors.toList());
     }
 

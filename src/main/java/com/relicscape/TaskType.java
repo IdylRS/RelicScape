@@ -9,7 +9,8 @@ public enum TaskType {
     KILL,
     CREATE,
     MAGIC,
-    LEVEL;
+    LEVEL,
+    QUEST;
 
     private List<LockedTask> tasks;
 }
