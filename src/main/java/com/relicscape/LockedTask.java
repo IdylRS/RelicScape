@@ -222,14 +222,19 @@ public class LockedTask {
         if(xpDifference <= 0.5 || xpTarget < 0) {
             boolean hasItem = itemID <= 0 || req.fulfilledBy(inventory.getItems());
             log.info("item valid for task "+ task.getDescription());
-            if(locations == null) return hasItem;
-            else return playerAtLocation(playerLoc, locations, task.useRegionID) && hasItem;
+            if(locations == null && task.useRegionID == false) return hasItem;
+            else return playerAtLocation(playerLoc, task, task.useRegionID) && hasItem;
         }
 
         return false;
     }
 
-    private static boolean playerAtLocation(WorldPoint playerLoc, List<WorldPoint> locations, boolean checkForRegion) {
+    private static boolean playerAtLocation(WorldPoint playerLoc, LockedTask task, boolean checkForRegion) {
+        List<WorldPoint> locations = task.getLocations();
+        if(locations == null) {
+            List<String> regionIDs = Arrays.asList(task.getRegion().getRegions());
+            return regionIDs.contains(playerLoc.getRegionID());
+        }
         return locations.stream().filter(p -> isLocationValid(playerLoc, p, checkForRegion)).collect(Collectors.toList()).size() > 0;
     }
 
