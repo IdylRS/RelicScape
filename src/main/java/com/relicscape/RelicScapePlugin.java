@@ -365,7 +365,7 @@ public class RelicScapePlugin extends Plugin {
 		client.addChatMessage(
 				ChatMessageType.GAMEMESSAGE,
 				"",
-				"You unlocked the "+skill.getName()+" skill! You have used "+skillSlots+"/10 skill unlocks.",
+				"You unlocked the "+skill.getName()+" skill! You have used "+skillSlots+"/"+config.maxSkillUnlocks()+" skill unlocks.",
 				null
 		);
 
@@ -847,13 +847,19 @@ public class RelicScapePlugin extends Plugin {
 	}
 
 	private void rollForRelicDrop(NPC npc, LocalPoint point) {
+		double maxCb = 350;
+		double minCb = 1;
 		double combatLevel = npc.getCombatLevel();
-		double chance = 2*Math.log(combatLevel);
+
+		// The chance of a relic drop is a normalized value between 0 and 15 based on CB level
+		// The value is then clamped so the min % chance is 0.5% and the max is 15%
+		double baseChance = (combatLevel - minCb) / (maxCb - minCb)  * 15;
+		double clampedChance = Math.min(15, Math.max(baseChance, .5));
 		double roll = Math.random()*100;
 
-		log.info(chance+"% chance of a relic drop... roll was "+roll);
+		log.info(clampedChance+"% chance of a relic drop... roll was "+roll);
 
-		if(roll < chance) {
+		if(roll < clampedChance) {
 			int tier = rollRelicTier(combatLevel);
 			addGroundItem(point, tier);
 			playRelicSound();

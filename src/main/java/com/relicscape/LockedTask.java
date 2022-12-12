@@ -219,7 +219,7 @@ public class LockedTask {
             if(t.getSkill() != skill) return false;
 
             if (creationSkills.contains(skill)) {
-                return checkForCreatedItem(t, inventory, playerLoc, t.getCompletionIDs().get(0), xpGained, t.getGainedXP(), t.getLocations());
+                return checkForCreatedItem(t, inventory, playerLoc, t.getCompletionIDs(), xpGained, t.getGainedXP(), t.getLocations());
             }
             else if(skill == Skill.AGILITY) {
                 if(t.getLocations().size() <= 0) return false;
@@ -229,7 +229,9 @@ public class LockedTask {
         }).collect(Collectors.toList());
     }
 
-    private static boolean checkForCreatedItem(LockedTask task, ItemContainer inventory, WorldPoint playerLoc, int itemID, int xpGained, double xpTarget, List<WorldPoint> locations) {
+    private static boolean checkForCreatedItem(LockedTask task, ItemContainer inventory, WorldPoint playerLoc, List<Integer> itemIDs, int xpGained, double xpTarget, List<WorldPoint> locations) {
+        int itemID = -1;
+        if(itemIDs.size() >= 0) itemID = itemIDs.get(0);
         ItemRequirement req = new SingleItemRequirement(itemID);
         double xpDifference = Math.abs(xpGained - xpTarget);
         if(xpDifference <= 0.5 || xpTarget < 0) {
