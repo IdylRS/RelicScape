@@ -300,6 +300,8 @@ public class LockedTask {
 
         return levelTaskList.stream().filter(t -> {
            if(completedTasks.contains(t.getId())) return false;
+           if(t.getDescription().contains("total level") && skillLevel < 100) return false;
+
            if(t.skill == Skill.OVERALL || skill == t.getSkill()) {
                return skillLevel >= t.gainedXP;
            }
