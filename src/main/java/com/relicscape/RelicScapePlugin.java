@@ -656,7 +656,7 @@ public class RelicScapePlugin extends Plugin {
 			skillXP.put(skill, newXp);
 			skillLevels.put(skill, client.getRealSkillLevel(skill));
 
-			List<LockedTask> completedTasks = LockedTask.checkForLevelCompletion(skill, skillLevel, unlockData.getTasks());
+			List<LockedTask> completedTasks = LockedTask.checkForLevelCompletion(skill, skillLevel, client.getTotalLevel(), unlockData.getTasks());
 			completedTasks.forEach(this::completeTask);
 
 			return;
@@ -682,9 +682,8 @@ public class RelicScapePlugin extends Plugin {
 
 		updateSkill(skill, xpGained);
 		List<LockedTask> completedTasks = LockedTask.checkForCreateCompletion(client, skill, xpGained, unlockData.getTasks());
-		if(levelsGained > 0 && skill != Skill.OVERALL) {
-			log.info("Levelled up in "+skill.getName());
-			completedTasks.addAll(LockedTask.checkForLevelCompletion(skill, skillLevel, unlockData.getTasks()));
+		if(levelsGained > 0) {
+			completedTasks.addAll(LockedTask.checkForLevelCompletion(skill, skillLevel, client.getTotalLevel(), unlockData.getTasks()));
 		}
 		completedTasks.forEach(this::completeTask);
 	}

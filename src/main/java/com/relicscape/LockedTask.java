@@ -295,12 +295,15 @@ public class LockedTask {
         }).collect(Collectors.toList());
     }
 
-    public static List<LockedTask> checkForLevelCompletion(Skill skill, int skillLevel, List<String> completedTasks) {
+    public static List<LockedTask> checkForLevelCompletion(Skill skill, int skillLevel, int totalLevel, List<String> completedTasks) {
         if(skill == Skill.HITPOINTS && skillLevel <= 10) return Arrays.asList();
 
         return levelTaskList.stream().filter(t -> {
            if(completedTasks.contains(t.getId())) return false;
-           if(t.getDescription().contains("total level") && skillLevel < 100) return false;
+
+           if(t.getDescription().contains("total level")) {
+               return totalLevel >= t.gainedXP;
+           }
 
            if(t.skill == Skill.OVERALL || skill == t.getSkill()) {
                return skillLevel >= t.gainedXP;
