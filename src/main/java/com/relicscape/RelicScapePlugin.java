@@ -343,6 +343,7 @@ public class RelicScapePlugin extends Plugin {
 
 	private void unlockDefaults() {
 		addPoints(1500);
+		savePlayerData();
 	}
 
 	private void unlockSkill(RelicScapeSkill skill) {
@@ -449,7 +450,6 @@ public class RelicScapePlugin extends Plugin {
 
 	private void addPoints(int amount) {
 		unlockData.addPoints(amount);
-		savePlayerData();
 	}
 
 	private void subtractPoints(int amount) {
@@ -659,6 +659,8 @@ public class RelicScapePlugin extends Plugin {
 			List<LockedTask> completedTasks = LockedTask.checkForLevelCompletion(skill, skillLevel, client.getTotalLevel(), unlockData.getTasks());
 			completedTasks.forEach(this::completeTask);
 
+			if(completedTasks.size() > 0) savePlayerData();
+
 			return;
 		}
 
@@ -686,6 +688,8 @@ public class RelicScapePlugin extends Plugin {
 			completedTasks.addAll(LockedTask.checkForLevelCompletion(skill, skillLevel, client.getTotalLevel(), unlockData.getTasks()));
 		}
 		completedTasks.forEach(this::completeTask);
+
+		if(completedTasks.size() > 0) savePlayerData();
 	}
 
 	@Subscribe
@@ -702,12 +706,14 @@ public class RelicScapePlugin extends Plugin {
 
 			if(relic != null) {
 				awardRelic(relic, true, true);
+				savePlayerData();
 			}
 		}
 		else if (menuOption.startsWith("Cast")){
 			int magicLevel = client.getRealSkillLevel(Skill.MAGIC);
 			List<LockedTask> completedTasks = LockedTask.checkForMagicCompletion(event.getParam1(), magicLevel, unlockData.getTasks());
 			completedTasks.forEach(this::completeTask);
+			if(completedTasks.size() > 0) savePlayerData();
 			log.info(menuOption + " target: " + menuTarget + " param0: " + event.getParam0() + " item param1:" + event.getParam1());
 		}
 		else if(menuTarget.equalsIgnoreCase("Quick-prayers")) {
@@ -782,6 +788,7 @@ public class RelicScapePlugin extends Plugin {
 
 		tasks.forEach(this::completeTask);
 
+		if(completedTasks.size() > 0) savePlayerData();
 		if(e.getContainerId() == InventoryID.INVENTORY.getId()) lastInventoryState = Arrays.asList(e.getItemContainer().getItems());
 	}
 
@@ -791,6 +798,7 @@ public class RelicScapePlugin extends Plugin {
 			clientThread.invokeLater(() -> {
 				List<LockedTask> tasks = LockedTask.checkForQuestCompletion(client, unlockData.getTasks());
 				tasks.forEach(this::completeTask);
+				if(tasks.size() > 0) savePlayerData();
 			});
 		}
 	}
@@ -832,6 +840,7 @@ public class RelicScapePlugin extends Plugin {
 
 		if(roll < chance) {
 			this.awardRelic(new Relic(1), false, true);
+			savePlayerData();
 
 			final ChatMessageBuilder message = new ChatMessageBuilder()
 					.append(ChatColorType.HIGHLIGHT)
@@ -862,7 +871,7 @@ public class RelicScapePlugin extends Plugin {
 	private void pickUpRelic(WorldPoint point) {
 		client.playSoundEffect(SoundEffectID.ITEM_PICKUP);
 		awardRelic(this.groundItems.get(point), false, false);
-
+		savePlayerData();
 		removeGroundItem(point);
 		removeLootbeam(point);
 	}
