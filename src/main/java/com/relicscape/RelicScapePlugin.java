@@ -500,6 +500,7 @@ public class RelicScapePlugin extends Plugin {
 
 	@Subscribe
 	public void onWidgetLoaded(WidgetLoaded e) {
+		// World map loaded
 		if (e.getGroupId() == 595) {
 			// The main window layer
 			Widget window = this.client.getWidget(WORLD_MAP_CONTAINER);
@@ -521,9 +522,11 @@ public class RelicScapePlugin extends Plugin {
 
 			this.updateMapState();
 		}
+		// Skill menu loaded
 		else if(e.getGroupId() == 320) {
 			this.createLockedSkillOverlays();
 		}
+		// Prayer menu loaded
 		else if(e.getGroupId() == 160 && quickPrayer == null) {
 			Widget prayerOrb = client.getWidget(PRAYER_ORB);
 			Widget orbWidget = prayerOrb.createChild(-1, WidgetType.GRAPHIC);
