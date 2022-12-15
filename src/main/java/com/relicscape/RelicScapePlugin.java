@@ -69,6 +69,7 @@ import static net.runelite.http.api.RuneLiteAPI.GSON;
 )
 public class RelicScapePlugin extends Plugin {
 	public static final String CONFIG_KEY = "relicscape";
+	private static final String CFG_KEY_STATE = "prevState";
 	public static final String DATA_FOLDER_NAME = "relicscape";
 
 	/* Packed Widget IDs */
@@ -100,10 +101,6 @@ public class RelicScapePlugin extends Plugin {
 	private static final String ACTION_TEXT_CONFIRM = "Confirm";
 	private static final String ACTION_TEXT_BACK = "Back";
 	private static final String NAME_TEXT_TOGGLE = "Map Mode";
-
-	/* Configuration Group & Keys */
-	private static final String CFG_GROUP = "nexusMapCFG";
-	private static final String CFG_KEY_STATE = "prevState";
 
 	/* Definition JSON files */
 	private static final String DEF_FILE_REGIONS = "RegionDef.json";
@@ -909,12 +906,6 @@ public class RelicScapePlugin extends Plugin {
 		skillOverlays.put(skillName, widgets);
 	}
 
-	/**
-	 * Shows or hides the default menu widgets
-	 *
-	 * @param visible the desired visibility state of the widgets,
-	 *                true to set them to visible, false for hidden
-	 */
 	private void setDefaultWidgetVisibility(boolean visible) {
 		// Iterate though each of the non essential widgets
 		for (Integer packedID : this.hiddenWidgetIDs) {
@@ -923,29 +914,15 @@ public class RelicScapePlugin extends Plugin {
 		}
 	}
 
-	/**
-	 * Updates which menu is being displayed
-	 */
 	private void updateDisplayedMenu() {
 		// Set the initial map state from config
 		this.mapEnabled = this.getInitialMapState();
 	}
 
-	/**
-	 * Gets the preferred initial menu to display upon
-	 * first opening the Nexus menu, as set in the config
-	 *
-	 * @return true if the initial menu should be the map,
-	 * or false if the original menu should be displayed
-	 */
 	private boolean getInitialMapState() {
 		return false;
 	}
 
-	/**
-	 * Creates the pages for the nexus menu, which are used to group the
-	 * various UI components in order to conveniently switch between them
-	 */
 	private void createMenuPages(Widget window) {
 		this.indexPage = new UIPage();
 		this.confirmPage = new ConfirmationScreen(window);
@@ -1242,9 +1219,6 @@ public class RelicScapePlugin extends Plugin {
 		this.displayIndexPage();
 	}
 
-	/**
-	 * Called when the back arrow has been pressed
-	 */
 	private void onBackButtonPressed() {
 		// Go back to the index page
 		this.displayIndexPage();
@@ -1253,13 +1227,8 @@ public class RelicScapePlugin extends Plugin {
 		this.client.playSoundEffect(SoundEffectID.UI_BOOP);
 	}
 
-	/**
-	 * Stores the display mode the menu was last in into the config
-	 *
-	 * @param mode true for map mode, false for the standard menu
-	 */
 	private void setPreviousDisplayMode(boolean mode) {
-		this.configManager.setConfiguration(CFG_GROUP, CFG_KEY_STATE, mode);
+		this.configManager.setConfiguration(CONFIG_KEY, CFG_KEY_STATE, mode);
 	}
 
 	private int getSpriteX(Widget window) {
