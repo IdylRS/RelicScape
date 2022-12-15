@@ -7,7 +7,7 @@ import net.runelite.api.RuneLiteObject;
 import net.runelite.api.coords.LocalPoint;
 
 public class Relic {
-    private static final int RELIC_GROUND_ID = 25511;
+    private static final int RELIC_GROUND_ID = 43349;
 
     private Client client;
     private LocalPoint location;
@@ -21,6 +21,7 @@ public class Relic {
     }
 
     public Relic(Client client, LocalPoint location, int tier) {
+        this.client = client;
         this.location = location;
         this.tier = tier;
 

@@ -575,8 +575,12 @@ public class RelicScapePlugin extends Plugin {
 
 			Relic relic = groundItems.get(tile.getWorldLocation());
 			if(relic == null) return;
+
+			Color color = relic.getTier() == 3 ? config.lootbeamColorT3() : relic.getTier() == 2 ? config.lootbeamColorT2() : config.lootbeamColorT1();
+			String hex = String.format("%02x%02x%02x", color.getRed(), color.getGreen(), color.getBlue());
+
 			client.createMenuEntry(-1)
-					.setTarget("Relic (T"+relic.getTier()+")")
+					.setTarget("<col="+hex+">Relic (T"+relic.getTier()+")</col>")
 					.setOption("Take")
 					.setType(MenuAction.GROUND_ITEM_FIRST_OPTION)
 					.onClick(e -> pickUpRelic(tile.getWorldLocation()));
