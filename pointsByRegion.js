@@ -1,7 +1,7 @@
 const fs = require('fs');
 const prompt = require('prompt-sync')({sigint: true});
 
-const fileLocation = `./src/main/resources/com/rslocked/tasks.json`;
+const fileLocation = `./src/main/resources/com/relicscape/tasks.json`;
 
 const data = JSON.parse(fs.readFileSync(fileLocation));
 

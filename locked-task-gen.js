@@ -244,5 +244,6 @@ function getRegion(region) {
 }
 
 function getSkill(skill) {
+    if(!skill) return 'HITPOINTS';
     return skill.toUpperCase();
 }
