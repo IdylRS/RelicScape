@@ -154,6 +154,9 @@ public class RelicScapePlugin extends Plugin {
 	@Inject
 	private ClientToolbar clientToolbar;
 
+	@Inject
+	private Gson gson;
+
 	@Setter(AccessLevel.PACKAGE)
 	@Getter
 	private int hoveredRegion = -1;
@@ -262,9 +265,6 @@ public class RelicScapePlugin extends Plugin {
 	 * Loads the definition files
 	 */
 	private void loadDefinitions() {
-		// Construct an instance of GSON
-		Gson gson = new Gson();
-
 		// Load the definitions files for the regions and sprite override
 		this.regionDefinitions = loadDefinitionResource(RegionDefinition[].class, DEF_FILE_REGIONS, gson);
 		this.spriteDefinitions = loadDefinitionResource(SpriteDefinition[].class, DEF_FILE_SPRITES, gson);
