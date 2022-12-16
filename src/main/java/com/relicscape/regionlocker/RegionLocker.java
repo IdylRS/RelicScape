@@ -32,6 +32,7 @@ import com.relicscape.RelicScapePlugin;
 import com.relicscape.TrailblazerRegion;
 import lombok.Getter;
 import net.runelite.api.Client;
+import net.runelite.api.Quest;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.util.Text;
 
@@ -78,7 +79,6 @@ public class RegionLocker
 		grayColor = config.shaderGrayColor();
 		grayAmount = config.shaderGrayAmount().getAlpha();
 		hardBorder = config.hardBorder();
-
 		regions.clear();
 	}
 
