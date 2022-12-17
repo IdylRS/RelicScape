@@ -611,12 +611,10 @@ public class RelicScapePlugin extends Plugin {
 	@Subscribe
 	public void onGameStateChanged(GameStateChanged event) {
 		if (event.getGameState() == GameState.LOGGED_IN) {
+			skillXP = null;
 			setupPlayerFile();
 			handleLootbeams();
-
-			if(skillXP == null) {
-				initXpTracker();
-			}
+			initXpTracker();
 
 			if(pointsInfoBox == null) {
 				BufferedImage icon = itemManager.getImage(999);
@@ -659,7 +657,6 @@ public class RelicScapePlugin extends Plugin {
 		if(skillXP.get(skill) < 0) {
 			skillXP.put(skill, newXp);
 			skillLevels.put(skill, client.getRealSkillLevel(skill));
-
 			List<LockedTask> completedTasks = LockedTask.checkForLevelCompletion(skill, skillLevel, client.getTotalLevel(), unlockData.getTasks());
 			completedTasks.forEach(this::completeTask);
 

@@ -231,7 +231,7 @@ public class LockedTask {
 
     private static boolean checkForCreatedItem(LockedTask task, ItemContainer inventory, WorldPoint playerLoc, List<Integer> itemIDs, int xpGained, double xpTarget, List<WorldPoint> locations) {
         int itemID = -1;
-        if(itemIDs.size() >= 0) itemID = itemIDs.get(0);
+        if(itemIDs.size() > 0) itemID = itemIDs.get(0);
         ItemRequirement req = new SingleItemRequirement(itemID);
         double xpDifference = Math.abs(xpGained - xpTarget);
         if(xpDifference <= 0.5 || xpTarget < 0) {
