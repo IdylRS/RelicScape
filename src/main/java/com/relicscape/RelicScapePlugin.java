@@ -35,6 +35,7 @@ import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.ConfigChanged;
 import net.runelite.client.events.NpcLootReceived;
+import net.runelite.client.events.OverlayMenuClicked;
 import net.runelite.client.game.ItemManager;
 import net.runelite.client.game.ItemStack;
 import net.runelite.client.game.SpriteManager;
@@ -106,6 +107,7 @@ public class RelicScapePlugin extends Plugin {
 	private static final String DEF_FILE_REGIONS = "RegionDef.json";
 	private static final String DEF_FILE_SPRITES = "SpriteDef.json";
 	private static final String DEF_FILE_TASKS = "tasks.json";
+	private static final String DEF_FILE_BOUNTIES = "bounties.json";
 
 	/* Sound Effects */
 	private static final int SOUND_EFFECT_FAIL = 2277;
@@ -157,6 +159,9 @@ public class RelicScapePlugin extends Plugin {
 	@Inject
 	private Gson gson;
 
+	@Inject
+	private BountyOverlay bountyOverlay;
+
 	@Setter(AccessLevel.PACKAGE)
 	@Getter
 	private int hoveredRegion = -1;
@@ -201,6 +206,10 @@ public class RelicScapePlugin extends Plugin {
 
 	private List<Item> lastInventoryState;
 
+	private List<Bounty> bounties;
+	@Getter
+	private Bounty activeBounty;
+
 	@Provides
 	RelicScapeConfig provideConfig(ConfigManager configManager) {
 		return configManager.getConfig(RelicScapeConfig.class);
@@ -211,6 +220,7 @@ public class RelicScapePlugin extends Plugin {
 		regionLocker = new RegionLocker(client, config, configManager, this);
 		overlayManager.add(regionLockerOverlay);
 		overlayManager.add(regionBorderOverlay);
+		overlayManager.add(bountyOverlay);
 		startMap();
 
 		pluginPanel = new RelicScapePluginPanel(this, this.clientThread, spriteManager);
@@ -227,6 +237,7 @@ public class RelicScapePlugin extends Plugin {
 
 	@Override
 	protected void shutDown() {
+		savePlayerData();
 		overlayManager.remove(regionLockerOverlay);
 		overlayManager.remove(regionBorderOverlay);
 		this.lootbeams.keySet().forEach(this::removeLootbeam);
@@ -270,6 +281,7 @@ public class RelicScapePlugin extends Plugin {
 		this.spriteDefinitions = loadDefinitionResource(SpriteDefinition[].class, DEF_FILE_SPRITES, gson);
 
 		LockedTask.createTasks(loadDefinitionResource(LockedTask[].class, DEF_FILE_TASKS, gson));
+		this.bounties = Arrays.asList(loadDefinitionResource(Bounty[].class, DEF_FILE_BOUNTIES, gson));
 	}
 
 	/**
@@ -318,6 +330,7 @@ public class RelicScapePlugin extends Plugin {
 		try {
 			String json = new Scanner(playerFile).useDelimiter("\\Z").next();
 			unlockData = GSON.fromJson(json, new TypeToken<UnlockData>() {}.getType());
+			if(unlockData.getActiveBounty() >= 0) activeBounty = bounties.get(unlockData.getActiveBounty());
 			regionLocker.updateRegions();
 			SwingUtilities.invokeLater(this::redrawPanel);
 		} catch (Exception e) {
@@ -390,7 +403,7 @@ public class RelicScapePlugin extends Plugin {
 		client.addChatMessage(
 				ChatMessageType.GAMEMESSAGE,
 				"",
-				"You unlocked the "+area.getName()+" region! You have used "+regionSlots+"/"+config.maxRegionUnlocks()+" region unlocks.",
+				"You unlocked the "+area.getName()+" region! You have used "+regionSlots+1+"/"+config.maxRegionUnlocks()+" region unlocks.",
 				null
 		);
 
@@ -454,19 +467,19 @@ public class RelicScapePlugin extends Plugin {
 		savePlayerData();
 	}
 
-	private void awardRelic(Relic relic, boolean sendMessage, boolean playSound) {
+	private void awardRelic(Relic relic, String message, boolean playSound) {
 		addPoints(relic.getValue());
 		if(playSound && config.playRelicSound()) client.playSoundEffect(config.relicSoundID());
 
-		if(sendMessage) {
-			final ChatMessageBuilder message = new ChatMessageBuilder()
+		if(message != null) {
+			final ChatMessageBuilder chatMessage = new ChatMessageBuilder()
 					.append(ChatColorType.HIGHLIGHT)
-					.append("You found a tier "+relic.getTier()+" relic worth "+relic.getValue()+" points!")
+					.append(message)
 					.append(ChatColorType.NORMAL);
 
 			chatMessageManager.queue(QueuedMessage.builder()
 					.type(ChatMessageType.ITEM_EXAMINE)
-					.runeLiteFormattedMessage(message.build())
+					.runeLiteFormattedMessage(chatMessage.build())
 					.build());
 		}
 	}
@@ -638,6 +651,12 @@ public class RelicScapePlugin extends Plugin {
 
 		if(npc == null) return;
 
+		if(activeBounty.isBountyComplete(npc.getId())) {
+			awardRelic(new Relic(activeBounty.getTier()), "You completed a Tier "+activeBounty.getTier()+" bounty.", true);
+			activeBounty = null;
+			savePlayerData();
+		}
+
 		rollForRelicDrop(npc, loot.get(0).getLocation());
 
 		List<LockedTask> completedTasks = LockedTask.checkForLootCompletion(loot, unlockData.getTasks());
@@ -706,7 +725,7 @@ public class RelicScapePlugin extends Plugin {
 			log.info("Opened a "+casketTier+" casket.");
 
 			if(relic != null) {
-				awardRelic(relic, true, true);
+				awardRelic(relic, "You found a tier "+relic.getTier()+" relic worth "+relic.getValue()+" points!", true);
 				savePlayerData();
 			}
 		}
@@ -757,6 +776,31 @@ public class RelicScapePlugin extends Plugin {
 
 			if(tasks.size() > 0) savePlayerData();
 		}
+
+		if(client.getGameState().equals(GameState.LOGGED_IN)) {
+			if(activeBounty != null || bounties == null) return;
+
+			double BOUNTY_CHANCE = 20;
+			double roll = Math.random()*BOUNTY_CHANCE;
+
+			if(roll <= 1) {
+				log.info("Generating a bounty");
+				List<Bounty> validBounties = bounties.stream().filter(b -> b.getMinCombatLevel() <= client.getLocalPlayer().getCombatLevel()).collect(Collectors.toList());
+
+				int bountyIndex = (int) Math.floor(Math.random()*validBounties.size());
+				activeBounty = validBounties.get(bountyIndex);
+
+				final ChatMessageBuilder message = new ChatMessageBuilder()
+						.append(ChatColorType.HIGHLIGHT)
+						.append("You received a new Tier "+activeBounty.getTier()+" bounty: "+activeBounty.getBountyDesc())
+						.append(ChatColorType.NORMAL);
+
+				chatMessageManager.queue(QueuedMessage.builder()
+						.type(ChatMessageType.ITEM_EXAMINE)
+						.runeLiteFormattedMessage(message.build())
+						.build());
+			}
+		}
 	}
 
 	@Subscribe
@@ -804,22 +848,25 @@ public class RelicScapePlugin extends Plugin {
 		}
 	}
 
+	@Subscribe
+	public void onOverlayMenuClicked(OverlayMenuClicked event) {
+		if(event.getEntry() == BountyOverlay.SKIP_ENTRY) {
+			activeBounty = null;
+
+			client.addChatMessage(
+					ChatMessageType.GAMEMESSAGE,
+					"",
+					"Bounty skipped. You'll receive a new one later.",
+					null
+			);
+		}
+	}
+
 	private void completeTask(LockedTask task) {
 		if(unlockData.getTasks().contains(task.getId())) return;
 
 		unlockData.addTask(task);
-		awardRelic(new Relic(task.getTier()), false, false);
-
-		final ChatMessageBuilder message = new ChatMessageBuilder()
-				.append(ChatColorType.HIGHLIGHT)
-				.append("You completed a Tier "+task.getTier()+" task: "+task.getDescription())
-				.append(ChatColorType.NORMAL);
-
-		chatMessageManager.queue(QueuedMessage.builder()
-				.type(ChatMessageType.ITEM_EXAMINE)
-				.runeLiteFormattedMessage(message.build())
-				.build());
-
+		awardRelic(new Relic(task.getTier()), "You completed a Tier "+task.getTier()+" task: "+task.getDescription(), false);
 		SwingUtilities.invokeLater(this::redrawPanel);
 	}
 
@@ -840,18 +887,8 @@ public class RelicScapePlugin extends Plugin {
 		log.info(chance + "% chance of relic... roll was "+roll);
 
 		if(roll < chance) {
-			this.awardRelic(new Relic(1), false, true);
+			this.awardRelic(new Relic(1), "While training "+skill.getName()+" you found a Tier 1 relic!", true);
 			savePlayerData();
-
-			final ChatMessageBuilder message = new ChatMessageBuilder()
-					.append(ChatColorType.HIGHLIGHT)
-					.append("While training "+skill.getName()+" you found a Tier 1 relic!")
-					.append(ChatColorType.NORMAL);
-
-			chatMessageManager.queue(QueuedMessage.builder()
-					.type(ChatMessageType.ITEM_EXAMINE)
-					.runeLiteFormattedMessage(message.build())
-					.build());
 		}
 	}
 
@@ -877,7 +914,7 @@ public class RelicScapePlugin extends Plugin {
 
 	private void pickUpRelic(WorldPoint point) {
 		client.playSoundEffect(SoundEffectID.ITEM_PICKUP);
-		awardRelic(this.groundItems.get(point), false, false);
+		awardRelic(this.groundItems.get(point), null, false);
 		savePlayerData();
 		removeGroundItem(point);
 		removeLootbeam(point);

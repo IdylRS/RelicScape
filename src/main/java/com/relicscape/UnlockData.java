@@ -10,11 +10,13 @@ import java.util.List;
 @Slf4j
 public class UnlockData {
     private int points;
+    private int activeBounty;
     private List<String> skills;
     private List<TrailblazerRegion> areas;
     private List<String> tasks;
 
     UnlockData() {
+        activeBounty = -1;
         points = 0;
         skills = new ArrayList<>();
         areas = new ArrayList<>();
