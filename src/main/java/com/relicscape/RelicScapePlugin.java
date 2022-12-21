@@ -778,27 +778,35 @@ public class RelicScapePlugin extends Plugin {
 		}
 
 		if(client.getGameState().equals(GameState.LOGGED_IN)) {
-			if(activeBounty != null || bounties == null) return;
+			if (activeBounty != null) {
+				activeBounty.decrementTicks();
 
-			double BOUNTY_CHANCE = 20;
-			double roll = Math.random()*BOUNTY_CHANCE;
+				if(activeBounty.getTicksRemaining() == 0) {
+					sendFailMessage("You did not complete your bounty in time.");
+					activeBounty = null;
+				}
+			}
+			else if (bounties != null) {
+				double BOUNTY_CHANCE = 6000;
+				double roll = Math.random() * BOUNTY_CHANCE;
 
-			if(roll <= 1) {
-				log.info("Generating a bounty");
-				List<Bounty> validBounties = bounties.stream().filter(b -> b.getMinCombatLevel() <= client.getLocalPlayer().getCombatLevel()).collect(Collectors.toList());
+				if (roll <= 1) {
+					List<Bounty> validBounties = bounties.stream().filter(b -> b.getMinCombatLevel() <= client.getLocalPlayer().getCombatLevel()).collect(Collectors.toList());
 
-				int bountyIndex = (int) Math.floor(Math.random()*validBounties.size());
-				activeBounty = validBounties.get(bountyIndex);
+					int bountyIndex = (int) Math.floor(Math.random() * validBounties.size());
+					activeBounty = validBounties.get(bountyIndex);
+					activeBounty.initCounter();
 
-				final ChatMessageBuilder message = new ChatMessageBuilder()
-						.append(ChatColorType.HIGHLIGHT)
-						.append("You received a new Tier "+activeBounty.getTier()+" bounty: "+activeBounty.getBountyDesc())
-						.append(ChatColorType.NORMAL);
+					final ChatMessageBuilder message = new ChatMessageBuilder()
+							.append(ChatColorType.HIGHLIGHT)
+							.append("You received a new Tier " + activeBounty.getTier() + " bounty: " + activeBounty.getBountyDesc() + ". You have 15 minutes.")
+							.append(ChatColorType.NORMAL);
 
-				chatMessageManager.queue(QueuedMessage.builder()
-						.type(ChatMessageType.ITEM_EXAMINE)
-						.runeLiteFormattedMessage(message.build())
-						.build());
+					chatMessageManager.queue(QueuedMessage.builder()
+							.type(ChatMessageType.ITEM_EXAMINE)
+							.runeLiteFormattedMessage(message.build())
+							.build());
+				}
 			}
 		}
 	}

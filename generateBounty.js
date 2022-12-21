@@ -24,7 +24,7 @@ const npcKey = npcName
     .trim();
 
 let ids = Object.keys(npcIDs).map(npc => {
-    if (npc.startsWith(npcKey)) {
+    if (npc.includes(npcKey)) {
         if (npc.includes("HARD")) return -1;
         console.log(`Found ${npc}`)
         return npcIDs[npc];

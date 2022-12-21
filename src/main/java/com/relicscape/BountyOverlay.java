@@ -4,7 +4,6 @@ import net.runelite.api.MenuAction;
 import net.runelite.client.ui.FontManager;
 import net.runelite.client.ui.overlay.*;
 import net.runelite.client.ui.overlay.components.LineComponent;
-import net.runelite.client.ui.overlay.components.TextComponent;
 import net.runelite.client.ui.overlay.components.TitleComponent;
 
 import javax.inject.Inject;
@@ -41,9 +40,9 @@ public class BountyOverlay extends OverlayPanel {
 
         graphics.setFont(FontManager.getRunescapeFont());
         bountyComponent.setRightColor(Color.GREEN);
-        bountyComponent.setLeftColor(Color.GREEN);
-        bountyComponent.setLeft("Tier "+plugin.getActiveBounty().getTier());
-        bountyComponent.setRight(plugin.getActiveBounty().getNpcName());
+        bountyComponent.setLeftColor(Color.WHITE);
+        bountyComponent.setRight(plugin.getActiveBounty().getTimeRemaining());
+        bountyComponent.setLeft(plugin.getActiveBounty().getNpcName()+" (T"+plugin.getActiveBounty().getTier()+")");
         return super.render(graphics);
     }
 }
