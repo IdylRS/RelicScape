@@ -30,7 +30,7 @@ public class Bounty {
     }
 
     public void initCounter() {
-        ticksRemaining = 1500;
+        ticksRemaining = 500;
     }
 
     public boolean isBountyComplete(int killedNpcID) {

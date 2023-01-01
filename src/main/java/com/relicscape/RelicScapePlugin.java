@@ -651,7 +651,7 @@ public class RelicScapePlugin extends Plugin {
 
 		if(npc == null) return;
 
-		if(activeBounty.isBountyComplete(npc.getId())) {
+		if(activeBounty != null && activeBounty.isBountyComplete(npc.getId())) {
 			awardRelic(new Relic(activeBounty.getTier()), "You completed a Tier "+activeBounty.getTier()+" bounty.", true);
 			activeBounty = null;
 			savePlayerData();
