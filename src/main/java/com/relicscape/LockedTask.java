@@ -236,7 +236,6 @@ public class LockedTask {
         double xpDifference = Math.abs(xpGained - xpTarget);
         if(xpDifference <= 0.5 || xpTarget < 0) {
             boolean hasItem = itemID <= 0 || req.fulfilledBy(inventory.getItems());
-            log.info("item valid for task "+ task.getDescription());
             if(locations == null && task.useRegionID == false) return hasItem;
             else return playerAtLocation(playerLoc, task, task.useRegionID) && hasItem;
         }

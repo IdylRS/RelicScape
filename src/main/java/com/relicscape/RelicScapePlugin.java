@@ -786,7 +786,7 @@ public class RelicScapePlugin extends Plugin {
 					activeBounty = null;
 				}
 			}
-			else if (bounties != null) {
+			else if (bounties != null && config.bountiesEnabled()) {
 				double BOUNTY_CHANCE = 6000;
 				double roll = Math.random() * BOUNTY_CHANCE;
 
@@ -799,7 +799,7 @@ public class RelicScapePlugin extends Plugin {
 
 					final ChatMessageBuilder message = new ChatMessageBuilder()
 							.append(ChatColorType.HIGHLIGHT)
-							.append("You received a new Tier " + activeBounty.getTier() + " bounty: " + activeBounty.getBountyDesc() + ". You have 15 minutes.")
+							.append("You received a new Tier " + activeBounty.getTier() + " bounty: " + activeBounty.getBountyDesc() + ". You have 5 minutes.")
 							.append(ChatColorType.NORMAL);
 
 					chatMessageManager.queue(QueuedMessage.builder()

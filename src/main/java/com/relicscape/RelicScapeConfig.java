@@ -102,6 +102,15 @@ public interface RelicScapeConfig extends Config
 	)
 	default int maxRegionUnlocks() { return 3; }
 
+	@ConfigItem(
+			keyName = "bountiesEnabled",
+			name = "Enable Bounties",
+			description = "Enables receiving bounties to gain points",
+			position = 7,
+			section = generalSettings
+	)
+	default boolean bountiesEnabled() { return true; }
+
 	// Environment Looks
 
 	@ConfigItem(
