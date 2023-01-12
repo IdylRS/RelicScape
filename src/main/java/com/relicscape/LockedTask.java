@@ -104,7 +104,6 @@ public class LockedTask {
                     break;
                 case QUEST:
                     questTaskList.add(task);
-                    log.info("Creating quest task "+task.getDescription());
                 default:
                     break;
             }
@@ -287,7 +286,6 @@ public class LockedTask {
     private static List<LockedTask> checkForChestLoot(ItemContainer itemContainer, List<String> completedTasks) {
         List<Item> containerItems = Arrays.asList(itemContainer.getItems());
         List<Integer> containerItemIDs = containerItems.stream().map(i -> i.getId()).collect(Collectors.toList());
-        log.info(containerItems.toString());
 
         return lootTaskList.stream().filter(t -> {
             if(completedTasks.contains(t.getId())) return false;

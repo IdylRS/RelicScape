@@ -373,8 +373,6 @@ public class RelicScapeGpuPlugin extends Plugin implements DrawCallbacks
 						GLContext versionContext = dummyDrawable.createContext(null);
 						versionContext.makeCurrent();
 						GL versionGL = versionContext.getGL();
-						log.info("Using device: {}", versionGL.glGetString(GL.GL_RENDERER));
-						log.info("Using driver: {}", versionGL.glGetString(GL.GL_VERSION));
 						versionContext.destroy();
 					}
 					catch (Exception ex)

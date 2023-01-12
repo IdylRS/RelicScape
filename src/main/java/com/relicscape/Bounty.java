@@ -38,7 +38,6 @@ public class Bounty {
     }
 
     public String getBountyDesc() {
-        log.info(ticksRemaining+"");
         return "Kill a "+npcName+".";
     }
 
@@ -55,6 +54,5 @@ public class Bounty {
         if(ticksRemaining == 0) return;
 
         ticksRemaining--;
-        log.info(ticksRemaining+"");
     }
 }

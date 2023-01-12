@@ -210,6 +210,8 @@ public class RelicScapePlugin extends Plugin {
 	@Getter
 	private Bounty activeBounty;
 
+	private NavigationButton navButton;
+
 	@Provides
 	RelicScapeConfig provideConfig(ConfigManager configManager) {
 		return configManager.getConfig(RelicScapeConfig.class);
@@ -225,7 +227,7 @@ public class RelicScapePlugin extends Plugin {
 
 		pluginPanel = new RelicScapePluginPanel(this, this.clientThread, spriteManager);
 		final BufferedImage icon = ImageUtil.loadImageResource(getClass(), "panel_icon.png");
-		NavigationButton navButton = NavigationButton.builder()
+		navButton = NavigationButton.builder()
 				.tooltip("RelicScape")
 				.priority(5)
 				.icon(icon)
@@ -240,6 +242,8 @@ public class RelicScapePlugin extends Plugin {
 		savePlayerData();
 		overlayManager.remove(regionLockerOverlay);
 		overlayManager.remove(regionBorderOverlay);
+		overlayManager.remove(bountyOverlay);
+		clientToolbar.removeNavigation(navButton);
 		this.lootbeams.keySet().forEach(this::removeLootbeam);
 		this.groundItems.keySet().forEach(this::removeGroundItem);
 		skillXP = null;
@@ -722,8 +726,6 @@ public class RelicScapePlugin extends Plugin {
 			String casketTier = menuTarget.split("Reward casket")[1].replaceAll("\\(|\\)", "").trim();
 			Relic relic = rollForRelicCasket(casketTier);
 
-			log.info("Opened a "+casketTier+" casket.");
-
 			if(relic != null) {
 				awardRelic(relic, "You found a tier "+relic.getTier()+" relic worth "+relic.getValue()+" points!", true);
 				savePlayerData();
@@ -734,7 +736,7 @@ public class RelicScapePlugin extends Plugin {
 			List<LockedTask> completedTasks = LockedTask.checkForMagicCompletion(event.getParam1(), magicLevel, unlockData.getTasks());
 			completedTasks.forEach(this::completeTask);
 			if(completedTasks.size() > 0) savePlayerData();
-			log.info(menuOption + " target: " + menuTarget + " param0: " + event.getParam0() + " item param1:" + event.getParam1());
+			log.debug(menuOption + " target: " + menuTarget + " param0: " + event.getParam0() + " item param1:" + event.getParam1());
 		}
 		else if(menuTarget.equalsIgnoreCase("Quick-prayers")) {
 			if(!unlockData.getSkills().contains(Skill.PRAYER.getName())) {
@@ -892,7 +894,7 @@ public class RelicScapePlugin extends Plugin {
 		double chance = Math.min(xpGained, maxXp) / maxXp * maxChance;
 		double roll = Math.random()*100;
 
-		log.info(chance + "% chance of relic... roll was "+roll);
+		log.debug(chance + "% chance of relic... roll was "+roll);
 
 		if(roll < chance) {
 			this.awardRelic(new Relic(1), "While training "+skill.getName()+" you found a Tier 1 relic!", true);
@@ -911,7 +913,7 @@ public class RelicScapePlugin extends Plugin {
 		double clampedChance = Math.min(15, Math.max(baseChance, .5));
 		double roll = Math.random()*100;
 
-		log.info(clampedChance+"% chance of a relic drop... roll was "+roll);
+		log.debug(clampedChance+"% chance of a relic drop... roll was "+roll);
 
 		if(roll < clampedChance) {
 			int tier = rollRelicTier(combatLevel);
@@ -1406,14 +1408,12 @@ public class RelicScapePlugin extends Plugin {
 		int relicRoll = (int) Math.floor(Math.random()*100);
 		int relicChance = clueScroll.getRelicChance();
 
-		log.info("There is a "+relicChance+"% chance of rolling a relic. The roll was "+relicRoll);
+		log.debug("There is a "+relicChance+"% chance of rolling a relic. The roll was "+relicRoll);
 
 		if(relicRoll >= relicChance) return null;
 
 		List<Integer> chances = clueScroll.getRelicTierChances();
 		int tierRoll = (int) Math.floor(Math.random()*100);
-
-		log.info("The tier chances are "+chances.toString()+". The roll was "+tierRoll);
 
 		if(tierRoll < chances.get(3)){
 			return new Relic(4);
