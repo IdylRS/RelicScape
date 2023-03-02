@@ -4580,8 +4580,8 @@
         "completionIDs": [],
         "locations": [
             {
-                "x": "2584",
-                "y": "3216",
+                "x": "2635",
+                "y": "3266",
                 "plane": "0"
             }
         ],
@@ -10725,13 +10725,13 @@
         "id": 47447,
         "tier": 2,
         "type": "QUEST",
-        "description": "Complete the Death to the Doreshuun\r quest",
+        "description": "Complete the Death to the Dorgeshuun\r quest",
         "region": "MISTHALIN",
         "completionIDs": [],
         "locations": [],
         "gainedXP": -1,
         "useRegionID": false,
-        "quest": "DEATH_TO_THE_DORESHUUN"
+        "quest": "DEATH_TO_THE_DORGESHUUN"
     },
     {
         "id": 12714,
